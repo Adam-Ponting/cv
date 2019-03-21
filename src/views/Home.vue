@@ -1,60 +1,22 @@
 <template>
   <div>
-    <div>
-      <image-adam />
-    </div>
-    <div>
-      <intro-adam />
-    </div>
-    <div>
-      <story-adam />
-    </div>
-    <div class="full">
-      <works-adam />
-    </div>
-    <div class="full">
-      <experience-adam />
-    </div>
-    <div class="full">
-      <contact-adam />
-    </div>
+    <app-intro />
+    <app-story />
+    <app-works />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import ImageAdam from "@/components/ImageAdam.vue";
-import IntroAdam from "@/components/IntroAdam.vue";
-import StoryAdam from "@/components/StoryAdam.vue";
-import WorksAdam from "@/components/WorksAdam.vue";
-import ExperienceAdam from "@/components/ExperienceAdam.vue";
-import ContactAdam from "@/components/ContactAdam.vue";
+import AppIntro from "@/components/AppIntro.vue";
+import AppStory from "@/components/AppStory.vue";
+import AppWorks from "@/components/AppWorks.vue";
 export default {
   components: {
-    ImageAdam,
-    IntroAdam,
-    StoryAdam,
-    WorksAdam,
-    ExperienceAdam,
-    ContactAdam
+    AppIntro,
+    AppStory,
+    AppWorks
   }
 };
 </script>
 
-<style scoped lang="scss">
-#flex-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  background-color: DodgerBlue;
-}
-#flex-container > div {
-  flex-basis: 50%;
-  background-color: #f1f1f1;
-}
-#flex-container > div.full {
-  flex-basis: 100%;
-  background-color: #f1f1f1;
-}
-</style>
+<style scoped lang="scss"></style>

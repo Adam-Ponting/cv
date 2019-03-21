@@ -1,9 +1,13 @@
 <template>
   <div>
-    <div id="nav">
+    <!-- 
+     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/product">product</router-link>
+      <router-link to="/product">product</router-link> |
+      <router-link to="/tennis">tennis</router-link>
     </div>
+
+    -->
 
     <router-view />
   </div>

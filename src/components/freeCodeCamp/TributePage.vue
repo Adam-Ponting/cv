@@ -1,40 +1,44 @@
 <template>
   <div>
-    <div id="main">
-      <header id="title">
-        <h1>Ghenghis Khan</h1>
-        <span
-          >Mongolian warrior and ruler Genghis Khan created the largest empire
-          in the world, the Mongol Empire, by destroying individual tribes in
-          Northeast Asia.</span
-        >
-      </header>
-
-      <div id="img-div">
-        <img
-          src="https://live-admin-vjv1.tigerbay.co.uk/resize.ashx?f=Giant%20Genghis%20Khan%20Statue.jpg&w=0&h=0"
-          id="image"
-          alt="Ghenghis khan statue"
-        />
-        <p id="img-caption">
-          Genghis Khan Equestrian Statue, part of the Genghis Khan Statue
-          Complex on the bank of the Tuul River at Tsonjin Boldog (54 km (33.55
-          mi) east of the Mongolian capital Ulaanbaatar)
-        </p>
+    <div class="bgimg-1">
+      <div class="caption">
+        <span class="border">Ghenghis Khan</span>
       </div>
+    </div>
 
-      <div id="tribute-info">
-        <h2>Synopsis</h2>
-        <p>
-          Genghis Khan was born "Temujin" in Mongolia around 1162. He married at
-          age 16, but had many wives during his lifetime. At 20, he began
-          building a large army with the intent to destroy individual tribes in
-          Northeast Asia and unite them under his rule. He was successful; the
-          Mongol Empire was the largest empire in the world before the British
-          Empire, and lasted well after his own death in 1227.
-        </p>
+    <div
+      style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;"
+    >
+      <h3 style="text-align:center;">Synopsis</h3>
+      <p>
+        Mongolian warrior and ruler Genghis Khan created the largest empire in
+        the world, the Mongol Empire, by destroying individual tribes in
+        Northeast Asia.
+      </p>
+      <p>
+        Genghis Khan was born "Temujin" in Mongolia around 1162. He married at
+        age 16, but had many wives during his lifetime. At 20, he began building
+        a large army with the intent to destroy individual tribes in Northeast
+        Asia and unite them under his rule. He was successful; the Mongol Empire
+        was the largest empire in the world before the British Empire, and
+        lasted well after his own death in 1227.
+      </p>
+    </div>
 
-        <h2>Early Life</h2>
+    <div class="bgimg-2">
+      <div class="caption">
+        <span
+          class="border"
+          style="background-color:transparent;font-size:25px;color: #f7f7f7;"
+          >Early Life</span
+        >
+      </div>
+    </div>
+
+    <div style="position:relative;">
+      <div
+        style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;"
+      >
         <p>
           Born in north central Mongolia around 1162, Genghis Khan was
           originally named "Temujin" after a Tatar chieftain that his father,
@@ -73,8 +77,23 @@
           Mongolian custom. However, only his male children with Borte qualified
           for succession in the family.
         </p>
+      </div>
+    </div>
 
-        <h2>The 'Universal Ruler'</h2>
+    <div class="bgimg-3">
+      <div class="caption">
+        <span
+          class="border"
+          style="background-color:transparent;font-size:25px;color: #f7f7f7;"
+          >The 'Universal Ruler'</span
+        >
+      </div>
+    </div>
+
+    <div style="position:relative;">
+      <div
+        style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;"
+      >
         <p>
           When Temujin was about 20, he was captured in a raid by former family
           allies, the Taichi'uts, and temporarily enslaved. He escaped with the
@@ -135,8 +154,22 @@
           not committed great sins, God would not have sent a punishment like me
           upon you."
         </p>
+      </div>
+    </div>
 
-        <h2>Major Conquests</h2>
+    <div class="bgimg-4">
+      <div class="caption">
+        <span
+          class="border"
+          style="background-color:transparent;font-size:25px;color: #f7f7f7;"
+          >Major Conquests</span
+        >
+      </div>
+    </div>
+    <div style="position:relative;">
+      <div
+        style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;"
+      >
         <p>
           Genghis Khan wasted no time in capitalizing on his divine stature.
           While spiritual inspiration motivated his armies, the Mongols were
@@ -210,8 +243,21 @@
           for the Tangut betrayal, however, and ordered the execution of the
           imperial family, thus ending the Tangut lineage.
         </p>
-
-        <h2>Genghis Khan's Death</h2>
+      </div>
+    </div>
+    <div class="bgimg-6">
+      <div class="caption">
+        <span
+          class="border"
+          style="background-color:transparent;font-size:25px;color: #f7f7f7;"
+          >Genghis Khan's Death</span
+        >
+      </div>
+    </div>
+    <div style="position:relative;">
+      <div
+        style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;"
+      >
         <p>
           Genghis Khan died in 1227, soon after the submission of the Xi Xia.
           The exact cause of his death is unknown. Some historians maintain that
@@ -257,62 +303,105 @@
           of China.
         </p>
       </div>
+    </div>
 
-      <p>
-        To read more on Ghenghis Khan visit Wikipedia
-        <a
-          href="https://en.wikipedia.org/wiki/Genghis_Khan"
-          id="tribute-link"
-          target="_blank"
-          >here.</a
-        >
-      </p>
+    <div class="bgimg-5">
+      <div class="caption">
+        <span class="border">
+          <a
+            href="https://en.wikipedia.org/wiki/Genghis_Khan"
+            id="tribute-link"
+            target="_blank"
+            >Click to read more on Ghenghis Khan...</a
+          >
+        </span>
+      </div>
     </div>
   </div>
 </template>
 <script>
 export default {
-  name: "tribute"
+  data() {
+    return {
+      viewMore: false,
+      showing: true
+    };
+  }
 };
 </script>
 
 <style lang="scss" scoped>
-#tribute-info {
-  padding: 20px 100px;
-  font-size: 20px;
-  line-height: 1.5;
+.bgimg-1,
+.bgimg-5 {
+  position: relative;
+  opacity: 0.65;
+  height: 100vh;
+  // background-attachment: fixed;
+  background-position: center;
+  // background-repeat: no-repeat;
+  background-size: cover;
 }
-#tribute-info > p::first-letter {
-  color: red;
-  font-size: 40px;
-  line-height: 0.75;
+.bgimg-2,
+.bgimg-3,
+.bgimg-4,
+.bgimg-6 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-#main {
-  background-color: rgb(231, 216, 218);
-  text-align: center;
-}
-#title {
-  font-weight: bold;
-}
-#title span {
-  font-size: 20px;
-  font-weight: bold;
-  padding: 0 50px;
-}
-#img-div {
-  padding: 0 0 10px;
-  width: 100%;
-  border: 0 10px solid white;
-  background: white;
-  border-radius: 15px;
-  box-sizing: border-box;
+.bgimg-1 {
+  background-image: url("http://joelsantos.net/wp-content/uploads/2015/11/Mongolia_JoelSantos_09.jpg");
+  min-height: 100%;
 }
 
-#img-div > img {
-  width: 100%;
-  margin: 0 auto;
+.bgimg-2 {
+  background-image: url("https://cms.qz.com/wp-content/uploads/2016/07/01-grand-prize-e1467408733758.jpg?quality=75&strip=all&w=1600&h=900&crop=1");
+  min-height: 400px;
 }
-#img-caption {
-  padding: 0 50px;
+
+.bgimg-3 {
+  background-image: url("https://www.irishtimes.com/polopoly_fs/1.2842997.1477410512!/image/image.jpg");
+  min-height: 400px;
+}
+.bgimg-4 {
+  background-image: url("http://www.catersnews.com/wp-content/uploads/2016/02/2_CATERS_MONGOLIA_COWBOYS_03-800x498.jpg");
+  min-height: 400px;
+}
+.bgimg-5 {
+  background-image: url("https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iouW9oZ6iXH4/v1/1200x784.jpg");
+
+  min-height: 400px;
+}
+.bgimg-6 {
+  background-image: url("http://onebigphoto.com/uploads/2015/04/living-with-raindeers-mongolia.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+.border a {
+  text-decoration: none;
+  color: white;
+}
+.border a:hover {
+  text-decoration: underline;
+  color: white;
 }
 </style>

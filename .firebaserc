@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "firebase-cv": "adp-cv",
+    "default": "adp-cv"
+  }
+}
