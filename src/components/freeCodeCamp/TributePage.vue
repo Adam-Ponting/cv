@@ -6,9 +6,7 @@
       </div>
     </div>
 
-    <div
-      style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;"
-    >
+    <div class="text">
       <h3 style="text-align:center;">Synopsis</h3>
       <p>
         Mongolian warrior and ruler Genghis Khan created the largest empire in
@@ -27,18 +25,12 @@
 
     <div class="bgimg-2">
       <div class="caption">
-        <span
-          class="border"
-          style="background-color:transparent;font-size:25px;color: #f7f7f7;"
-          >Early Life</span
-        >
+        <span class="border-transparent">Early Life</span>
       </div>
     </div>
 
     <div style="position:relative;">
-      <div
-        style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;"
-      >
+      <div class="text-main">
         <p>
           Born in north central Mongolia around 1162, Genghis Khan was
           originally named "Temujin" after a Tatar chieftain that his father,
@@ -82,18 +74,12 @@
 
     <div class="bgimg-3">
       <div class="caption">
-        <span
-          class="border"
-          style="background-color:transparent;font-size:25px;color: #f7f7f7;"
-          >The 'Universal Ruler'</span
-        >
+        <span class="border-transparent">The 'Universal Ruler'</span>
       </div>
     </div>
 
     <div style="position:relative;">
-      <div
-        style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;"
-      >
+      <div class="text-main">
         <p>
           When Temujin was about 20, he was captured in a raid by former family
           allies, the Taichi'uts, and temporarily enslaved. He escaped with the
@@ -159,17 +145,11 @@
 
     <div class="bgimg-4">
       <div class="caption">
-        <span
-          class="border"
-          style="background-color:transparent;font-size:25px;color: #f7f7f7;"
-          >Major Conquests</span
-        >
+        <span class="border-transparent">Major Conquests</span>
       </div>
     </div>
     <div style="position:relative;">
-      <div
-        style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;"
-      >
+      <div class="text-main">
         <p>
           Genghis Khan wasted no time in capitalizing on his divine stature.
           While spiritual inspiration motivated his armies, the Mongols were
@@ -247,17 +227,11 @@
     </div>
     <div class="bgimg-6">
       <div class="caption">
-        <span
-          class="border"
-          style="background-color:transparent;font-size:25px;color: #f7f7f7;"
-          >Genghis Khan's Death</span
-        >
+        <span class="border-transparent">Genghis Khan's Death</span>
       </div>
     </div>
     <div style="position:relative;">
-      <div
-        style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;"
-      >
+      <div class="text-main">
         <p>
           Genghis Khan died in 1227, soon after the submission of the Xi Xia.
           The exact cause of his death is unknown. Some historians maintain that
@@ -312,8 +286,7 @@
             href="https://en.wikipedia.org/wiki/Genghis_Khan"
             id="tribute-link"
             target="_blank"
-            >Click to read more on Ghenghis Khan...</a
-          >
+          >Read more...</a>
         </span>
       </div>
     </div>
@@ -322,10 +295,7 @@
 <script>
 export default {
   data() {
-    return {
-      viewMore: false,
-      showing: true
-    };
+    return {};
   }
 };
 </script>
@@ -353,30 +323,30 @@ export default {
   background-size: cover;
 }
 .bgimg-1 {
-  background-image: url("http://joelsantos.net/wp-content/uploads/2015/11/Mongolia_JoelSantos_09.jpg");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/adp-cv.appspot.com/o/mongolia%2Fmongolia1.jpg?alt=media&token=d265d904-45a7-4ad7-9a1e-378d69070801");
   min-height: 100%;
 }
 
 .bgimg-2 {
-  background-image: url("https://cms.qz.com/wp-content/uploads/2016/07/01-grand-prize-e1467408733758.jpg?quality=75&strip=all&w=1600&h=900&crop=1");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/adp-cv.appspot.com/o/mongolia%2Fmongolia2.jpg?alt=media&token=5ebfc845-f998-441b-b88a-c4af86d13599");
   min-height: 400px;
 }
 
 .bgimg-3 {
-  background-image: url("https://www.irishtimes.com/polopoly_fs/1.2842997.1477410512!/image/image.jpg");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/adp-cv.appspot.com/o/mongolia%2Fmongolia3.jpg?alt=media&token=5693978d-95ca-454f-a061-8fb0e0d8ed0a");
   min-height: 400px;
 }
 .bgimg-4 {
-  background-image: url("http://www.catersnews.com/wp-content/uploads/2016/02/2_CATERS_MONGOLIA_COWBOYS_03-800x498.jpg");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/adp-cv.appspot.com/o/mongolia%2Fmongolia4.jpg?alt=media&token=8c1aceff-855d-4997-8afe-b2ebced60287");
   min-height: 400px;
 }
 .bgimg-5 {
-  background-image: url("https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iouW9oZ6iXH4/v1/1200x784.jpg");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/adp-cv.appspot.com/o/mongolia%2Fmongolia5.jpg?alt=media&token=386f406a-f02f-4ee3-8154-5276b394b954");
 
   min-height: 400px;
 }
 .bgimg-6 {
-  background-image: url("http://onebigphoto.com/uploads/2015/04/living-with-raindeers-mongolia.jpg");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/adp-cv.appspot.com/o/mongolia%2Fmongolia6.jpg?alt=media&token=6d8b0368-419a-4cfd-b6d5-e10ebeab734b");
   min-height: 400px;
 }
 
@@ -391,10 +361,19 @@ export default {
 
 .caption span.border {
   background-color: #111;
+  border-radius: 90px;
+
   color: #fff;
-  padding: 18px;
-  font-size: 25px;
-  letter-spacing: 10px;
+  padding: 0.3em;
+  font-size: 2em;
+  letter-spacing: 0.3em;
+}
+.caption span.border-transparent {
+  background-color: transparent;
+  color: #fff;
+  padding: 0.3em;
+  font-size: 2em;
+  letter-spacing: 0.3em;
 }
 .border a {
   text-decoration: none;
@@ -403,5 +382,66 @@ export default {
 .border a:hover {
   text-decoration: underline;
   color: white;
+}
+.text {
+  color: #777;
+  background-color: white;
+  text-align: center;
+  padding: 3em 5em;
+  text-align: justify;
+}
+.text-main {
+  color: #ddd;
+  background-color: #282e34;
+  text-align: center;
+
+  padding: 3em 5em;
+  text-align: justify;
+}
+/* Turn off parallax scrolling for tablets and phones */
+@media screen and (max-width: 768px) {
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3,
+  .bgimg-4,
+  .bgimg-5,
+  .bgimg-6 {
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.9;
+    min-height: 200px;
+    height: fit-content;
+  }
+  .caption span.border {
+    background-color: rgba(17, 17, 17, 0.5);
+    border-radius: 90px;
+
+    line-height: 2em;
+    font-size: 1.1em;
+  }
+  .caption span.border-transparent {
+    background-color: rgba(17, 17, 17, 0.5);
+    border-radius: 90px;
+    color: #fff;
+    padding: 0.3em;
+    font-size: 1.1em;
+    letter-spacing: 0.3em;
+    line-height: 2em;
+  }
+  .text {
+    color: #777;
+    background-color: white;
+    text-align: center;
+    padding: 1em 1em;
+    text-align: justify;
+  }
+  .text-main {
+    color: #ddd;
+    background-color: rgba(40, 46, 52, 1);
+    text-align: center;
+
+    padding: 1em 1em;
+  }
 }
 </style>

@@ -252,7 +252,7 @@ export default {};
   font-weight: bold;
 }
 .service {
-  margin: 10px 10%;
+  margin: 1em 10%;
   //  background: rgb(216, 236, 236);
 }
 .grid-container-items {
@@ -388,6 +388,7 @@ export default {};
   left: 0;
   width: 100%;
   height: 100%;
+  min-width: 100%;
   padding: 0 0.5em;
   box-sizing: border-box;
 }
