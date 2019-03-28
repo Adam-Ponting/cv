@@ -1,6 +1,9 @@
 import Vue from "vue";
 import Router from "vue-router";
 import Home from "./views/Home.vue";
+import TributePage from "./components/freeCodeCamp/TributePage.vue";
+import ProductLandingPage from "./components/freeCodeCamp/ProductLandingPage.vue";
+import Error404 from "./components/Error404.vue";
 
 Vue.use(Router);
 
@@ -20,11 +23,7 @@ export default new Router({
     {
       path: "/tribute",
       name: "tribute",
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () =>
-        import(/* webpackChunkName: "about" */ "./components/freeCodeCamp/TributePage.vue")
+      component: TributePage
     },
     {
       path: "/survey",
@@ -38,20 +37,7 @@ export default new Router({
     {
       path: "/product",
       name: "product",
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () =>
-        import(/* webpackChunkName: "about" */ "./components/freeCodeCamp/ProductLandingPage.vue")
-    },
-    {
-      path: "/tribute",
-      name: "TributePage",
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () =>
-        import(/* webpackChunkName: "about" */ "./components/freeCodeCamp/TributePage.vue")
+      component: ProductLandingPage
     },
     {
       path: "/tennis",
@@ -61,6 +47,18 @@ export default new Router({
       // which is lazy-loaded when the route is visited.
       component: () =>
         import(/* webpackChunkName: "about" */ "./components/tennis/TennisHome.vue")
+    },
+    /*
+    https://router.vuejs.org/guide/essentials/history-mode.html#example-server-configurations
+    */
+    {
+      path: "/404",
+      name: "404",
+      component: Error404
+    },
+    {
+      path: "*",
+      redirect: "/404"
     }
   ]
 });

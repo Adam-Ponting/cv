@@ -432,5 +432,8 @@ export default {};
   .grid-container-footer {
     grid-template-columns: 1fr 1fr 1fr;
   }
+  .responsive-iframe iframe {
+    padding: 0;
+  }
 }
 </style>

@@ -1,186 +1,392 @@
 <template>
   <div>
-    <div id="main">
-      <form id="survey-form" action="">
-        <fieldset>
-          <h1 id="title">Survey Form</h1>
-          <p id="description">Let us know what events you're interested in</p>
-        </fieldset>
-
-        <div class="formArea">
+    <div class="bg"></div>
+    <div>
+      <h1>Triathlon Post Event Survey</h1>
+    </div>
+    <form @submit.prevent="validateBeforeSubmit()">
+      <fieldset class="personal">
+        <legend>1. Personal Details:</legend>
+        <h2 class="field-header">
+          complete our survey to be entered into a prize draw to win a place in
+          next year's event and a sponsor goodybag worth £100
+        </h2>
+        <div class="personal-form">
           <div class="question">
-            <label id="name-label" for="">* Name:</label>
+            <label for="firstname">first name:</label>
+            <br />
+            <label for="surname">surname:</label>
+            <label for="postcode">postcode:</label>
+            <label for="region">region:</label>
+            <label for="country">country:</label>
+            <label for="email">email address:</label>
+            <label for="phone">phone number:</label>
           </div>
           <div class="answer">
             <input
               type="text"
-              name="name"
-              id="name"
-              placeholder=" Your name"
-              min="2"
-              max="20"
-              required
+              name="firstname"
+              id="firstname"
+              placeholder="Enter your first name"
+              v-model="form.firstname"
+              v-validate="{ required: true, max: 20, alpha: true }"
+              :class="{ input: true, 'is-danger': errors.has('firstname') }"
             />
-          </div>
-          <div class="question">
-            <label id="email-label" for="">* Email: </label>
-          </div>
-          <div class="answer">
+            <span v-show="errors.has('firstname')" class="input-error">{{
+              errors.first("firstname")
+            }}</span>
+            <br />
+            <input
+              type="text"
+              name="surname"
+              id="surname"
+              placeholder="Enter your surname"
+              v-model="form.surname"
+              v-validate="{ required: true, max: 20, alpha: true }"
+              :class="{ input: true, 'is-danger': errors.has('surname') }"
+            />
+            <span v-show="errors.has('surname')" class="input-error">{{
+              errors.first("surname")
+            }}</span>
+
+            <input
+              type="text"
+              name="postcode"
+              id="postcode"
+              v-model="form.postcode"
+              placeholder="Enter your postcode"
+              @blur="lookUp()"
+              @click="form.postcode = ''"
+              v-validate="{ required: true, max: 10 }"
+              :class="{ input: true, 'is-danger': errors.has('postcode') }"
+            />
+            <span v-show="errors.has('postcode')" class="input-error">{{
+              errors.first("postcode")
+            }}</span>
+            {{ searching }}
+            <input
+              type="text"
+              name="region"
+              id="region"
+              disabled
+              v-model="form.region"
+              placeholder="Enter your postcode"
+              :class="{ input: false, 'is-danger': errors.has('postcode') }"
+            />
+            <input
+              type="text"
+              name="country"
+              id="country"
+              disabled
+              v-model="form.country"
+              placeholder="Enter your postcode"
+              :class="{ input: false, 'is-danger': errors.has('postcode') }"
+            />
             <input
               type="email"
               name="email"
               id="email"
-              placeholder=" name@email.com"
-              required
+              v-validate="{ required: true, max: 30 }"
+              :class="{ input: true, 'is-danger': errors.has('email') }"
             />
-          </div>
-          <div class="question">
-            <label id="number-label" for="">* Age: </label>
-          </div>
-          <div class="answer">
+            <span v-show="errors.has('email')" class="input-error">{{
+              errors.first("email")
+            }}</span>
+
             <input
               type="number"
-              name="number"
-              id="number"
-              placeholder=" Your age"
-              min="1"
-              max="100"
-              required
+              name="phone"
+              id="phone"
+              v-validate="{ required: true, max: 15, alpha_num: true }"
+              :class="{ input: true, 'is-danger': errors.has('phone') }"
             />
+            <span v-show="errors.has('phone')" class="input-error">{{
+              errors.first("phone")
+            }}</span>
           </div>
-          <div class="question">
-            <label for="">What area is your biggest strength:</label>
-          </div>
-          <div class="answer">
-            <select name="disciplines" id="dropdown">
-              <option value="" selected hidden disabled
-                >Select a discipline</option
-              >
-              <option value="swim">Swim</option>
-              <option value="bike">Bike</option>
-              <option value="run">Run</option>
-            </select>
-          </div>
-          <div class="question">
-            <label for="bike">Select your bike:</label>
-          </div>
-          <div class="answer">
-            <input type="radio" name="bike" id="" value="mtb" />Mountain Bike
-            <br />
-            <input type="radio" name="bike" id="" value="hybrid" />Hybrid Bike
-            <br />
-            <input type="radio" name="bike" id="" value="road" />Road Bike
-            <br />
-            <input type="radio" name="bike" id="" value="TT" />Time
-            Trial/Triathlon Bike
-          </div>
-          <div class="question">
-            <label for="">Select distances you are interested in:</label>
-          </div>
-          <div class="answer">
-            <input type="checkbox" name="" id="" value="superSprint" />Super
-            sprint distance: 400m (swim), 10km (bike), 2.5km (run)
-            <br />
-            <input type="checkbox" name="" id="" value="sprint" />Sprint
-            distance: 750m (swim), 20km (bike), 5km (run)
-            <br />
-            <input type="checkbox" name="" id="" value="standard" />Standard
-            (Olympic) distance: 1500m (swim), 40km (bike), 10km (run)
-            <br />
-            <input
-              type="checkbox"
-              name=""
-              id=""
-              value="halfIM"
-            />70.3/middle/half-Ironman distance: 1.9km (swim), 90km (bike), 21km
-            (run)
-            <br />
-            <input
-              type="checkbox"
-              name=""
-              id=""
-              value="fullIM"
-            />Full/long/Ironman distance: 3.8km (swim), 180km (bike), 42km (run)
-            - Ironman is a long-distance triathlon organised by the World
-            Triathlon Corporation (WTC).
-          </div>
-          <div class="question">
-            <label for="comments">Any additional comments</label>
-          </div>
-          <div class="answer">
-            <textarea name="comments" id="" cols="40" rows="5">
-Enter additional comments...</textarea
-            >
-          </div>
+          <br />
         </div>
-        <div>
-          <button id="submit">Submit</button>
-        </div>
-      </form>
+      </fieldset>
+      <fieldset class="question">
+        <legend>2. The Event</legend>
+        <h2>About you</h2>
+        <br />
+        <label for="firsttri">Was this your first triathlon?</label>
+        <input type="radio" name="firsttri" value="yes" id="firsttri" />yes
+        <input type="radio" name="firsttri" value="no" />no
+        <br />
+        <label for="enjoy">did you enjoy the event</label>
+        <input type="radio" name="enjoy" value="yes" id="enjoy" />yes
+        <input type="radio" name="enjoy" value="no" />no
+        <br />
+        <label for="triagain">would you take part in the event again?</label>
+        <input type="radio" name="triagain" value="yes" id="triagain" />yes
+        <input type="radio" name="triagain" value="no" />no
+        <br />
+        <label for="recommend"
+          >would you recommend the event to a friend?</label
+        >
+        <input type="radio" name="recommend" value="yes" id="recommend" />yes
+        <input type="radio" name="recommend" value="no" />no
+        <br />
+        <label for="fundraise">Did you fundraise for charity</label>
+        <input type="radio" name="fundraise" id="fundraise" value="yes" />yes
+        <input type="radio" name="fundraise" id="fundraise" value="no" />
+        no
+      </fieldset>
+      <fieldset>
+        <legend>3. How did we do?</legend>
+        <h2>How would you rate the following elements of the event?</h2>
+        <br />
+        <label for="swim">swim course</label>
+        <input type="radio" name="swim" value="excellent" id="swim" />excellent
+        <input type="radio" name="swim" value="good" />good
+        <input type="radio" name="swim" value="average" />average
+        <input type="radio" name="swim" value="poor" />
+        poor
+        <br />
+        <label for="bike">bike course</label>
+        <input type="radio" name="bike" value="excellent" id="swim" />excellent
+        <input type="radio" name="bike" value="good" />good
+        <input type="radio" name="bike" value="average" />average
+        <input type="radio" name="bike" value="poor" />poor
+        <br />
+        <label for="run">run course</label>
+        <input type="radio" name="run" value="excellent" id="swim" />excellent
+        <input type="radio" name="run" value="good" />good
+        <input type="radio" name="run" value="average" />average
+        <input type="radio" name="run" value="poor" />poor
+        <br />
+        <label for="organisation">organisation</label>
+        <input
+          type="radio"
+          name="organisation"
+          value="excellent"
+          id="swim"
+        />excellent <input type="radio" name="organisation" value="good" />good
+        <input type="radio" name="organisation" value="average" />average
+        <input type="radio" name="organisation" value="poor" />poor
+        <br />
+        <label for="communication">pre-event communication</label>
+        <input
+          type="radio"
+          name="communication"
+          value="excellent"
+          id="swim"
+        />excellent <input type="radio" name="communication" value="good" />good
+        <input type="radio" name="communication" value="average" />average
+        <input type="radio" name="communication" value="poor" />poor
+        <br />
+        <label for="merchandise">Official merchandise</label>
+        <input
+          type="radio"
+          name="merchandise"
+          value="excellent"
+          id="swim"
+        />excellent <input type="radio" name="merchandise" value="good" />good
+        <input type="radio" name="merchandise" value="average" />average
+        <input type="radio" name="merchandise" value="poor" />poor
+        <br />
+        <label for="helpdesk">help desk</label>
+        <input
+          type="radio"
+          name="helpdesk"
+          value="excellent"
+          id="swim"
+        />excellent <input type="radio" name="helpdesk" value="good" />good
+        <input type="radio" name="helpdesk" value="average" />average
+        <input type="radio" name="helpdesk" value="poor" />poor
+        <br />
+        <label for="overall">the overall event</label>
+        <input
+          type="radio"
+          name="overall"
+          value="excellent"
+          id="swim"
+        />excellent <input type="radio" name="overall" value="good" />good
+        <input type="radio" name="overall" value="average" />average
+        <input type="radio" name="overall" value="poor" />poor
+      </fieldset>
+      <fieldset>
+        <legend>4. Next time...</legend>
+        <label for="feedback">
+          <h2>
+            Is there anything you liked in particular or would change about the
+            event?
+          </h2>
+        </label>
+        <input type="text" name="feedback" id="feedback" />
+      </fieldset>
+      <input type="submit" />
+    </form>
+    <div class="wrap">
+      <div class="q">question</div>
+      <div class="a">answer</div>
+    </div>
+    <div>
+      <div v-if="loading">Loading.....</div>
+
+      <div>{{ jokes }}</div>
+      <input type="text" v-model="test" />
     </div>
   </div>
 </template>
 
-<style lang="scss" scoped>
-#main {
-  background-color: rgb(228, 217, 219);
-  margin: 30px;
-  padding: 15px;
-  border: 1px solid black;
-  border-radius: 15px;
-  font-size: 120%;
-  line-height: 1.5;
+<script>
+import axios from "axios";
+export default {
+  name: "app",
+  data() {
+    return {
+      form: {
+        firstname: "",
+        surname: "",
+        postcode: "",
+        region: "",
+        country: "",
+        email: "",
+        phone: ""
+      },
+      jokes: [],
+      loading: false,
+      status: true,
+      surnameStyle: true,
+      searching: "",
+      test: ""
+    };
+  },
+  methods: {
+    validateBeforeSubmit() {
+      this.$validator.validateAll().then(result => {
+        if (result) {
+          // eslint-disable-next-line
+          alert("Form Submitted!");
+          return;
+        }
+
+        alert("Correct them errors!");
+      });
+    },
+    surname() {
+      this.status = true;
+    },
+    lookUp() {
+      // https://stackoverflow.com/questions/40996344/axios-cant-set-data
+      // http://michaelnthiessen.com/this-is-undefined/
+
+      this.searching = "searching";
+      axios
+        .get("https://api.postcodes.io/postcodes/" + this.form.postcode)
+        .then(
+          response => {
+            //  console.log(response);
+            this.searching = "";
+            this.status = true;
+            this.form.region = response.data.result.parliamentary_constituency;
+            this.form.country = response.data.result.country;
+          },
+          error => {
+            this.searching = "";
+            this.form.postcode = "Please enter a valid postcode" + error;
+            this.status = false;
+          }
+        );
+    }
+  }
+};
+</script>
+
+<style scoped lang="scss">
+input.is-danger {
+  background: lightcoral;
+  border: 2px solid red;
 }
-#survey-form {
-  background-color: rgb(228, 217, 219);
-  padding: 2%;
+.input {
+  background: lightblue;
 }
-#name {
-  width: 40%;
-  min-width: 200px;
+.input-error {
+  color: red;
+  font-size: 0.8em;
 }
-#email {
-  width: 40%;
-  min-width: 200px;
+.wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
-.formArea {
-  padding: 3% 10%;
+.q {
+  flex: 1 1 100%;
+  background: red;
+  align-self: flex-end;
+  text-align: end;
+}
+.a {
+  flex: 1 1 100%;
+  background: green;
+}
+.bg {
+  background-size: 100%;
+  background: url("http://www.bannatynegroup.co.uk/assets/images/social-bg-2.jpg")
+    no-repeat center;
+  background-attachment: fixed;
+  opacity: 0.2;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.personal {
+  position: relative;
+  left: 0;
+  //  top: 50%;
+  // width: 100%;
+  color: #000;
+}
+.personal-form {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: nowrap;
 }
 .question {
-  color: red;
-  padding-top: 2%;
+  flex: 1 1 50%;
+  // align-self: flex-start;
+  margin: 0.6em 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-items: flex-end;
+}
+.question label {
+  flex: 1 1 100%;
+  border: 1px solid black;
+  text-align: end;
+  width: 50%;
 }
 .answer {
-  color: purple;
-  margin-left: 2%;
+  flex: 1 1 50%;
+  margin: 0.6em 0;
+  display: flex;
+  flex-direction: column;
 }
-#number {
-  width: 40%;
-  min-width: 200px;
+.answer input,
+.answer select {
+  width: 50%;
 }
-fieldset {
-  background-color: #feb236;
-  border-radius: 15px;
+.field-header {
+  background-color: #111;
+  border-radius: 90px;
+  color: #fff;
+  padding: 0.3em;
+  font-size: 1em;
+  letter-spacing: 0.3em;
+  box-sizing: border-box;
 }
-form {
-  background-color: #d64161;
-}
-input {
-  background-color: lightcyan;
-  text-indent: 1em;
-}
-#title,
-#description {
-  padding: 1%;
-  text-align: center;
-}
-button {
-  margin-left: 45%;
-  align-self: center;
-  align-items: center;
-  text-align: center;
-}
-textarea {
-  max-width: 50vw;
+// Turn Off Number Input Spinners
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 </style>

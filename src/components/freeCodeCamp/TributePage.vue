@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="bgimg-1">
-      <div class="caption">
+      <div class="caption top">
         <span class="border">Ghenghis Khan</span>
       </div>
     </div>
@@ -280,13 +280,14 @@
     </div>
 
     <div class="bgimg-5">
-      <div class="caption">
+      <div class="caption bottom">
         <span class="border">
           <a
             href="https://en.wikipedia.org/wiki/Genghis_Khan"
             id="tribute-link"
             target="_blank"
-          >Read more...</a>
+            >Read more...</a
+          >
         </span>
       </div>
     </div>
@@ -358,11 +359,47 @@ export default {
   text-align: center;
   color: #000;
 }
+.caption.top {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  padding-left: 16em;
+  border-radius: 0px;
+  color: #000;
+}
+.caption.bottom {
+  position: absolute;
+  left: 0;
+  top: 80%;
+  width: 100%;
+  text-align: center;
+  vertical-align: bottom;
+  box-sizing: border-box;
+  color: #000;
+}
+.caption.bottom span.border {
+  background-color: #111;
+  border-radius: 90px;
+  color: #fff;
+  padding: 0.3em;
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+}
+.caption.top span.border {
+  background-color: #111;
+  border-radius: 0;
+  color: #fff;
+  padding: 0.5em;
+  font-size: 2em;
+  letter-spacing: 0.3em;
+}
 
 .caption span.border {
   background-color: #111;
   border-radius: 90px;
-
   color: #fff;
   padding: 0.3em;
   font-size: 2em;
@@ -413,6 +450,25 @@ export default {
     min-height: 200px;
     height: fit-content;
   }
+  .caption.top {
+    padding: 0;
+  }
+  .caption.top span.border {
+    background-color: rgba(17, 17, 17, 0.5);
+    border-radius: 90px;
+
+    line-height: 2em;
+    font-size: 1.1em;
+  }
+  .caption.bottom span.border {
+    background-color: #111;
+    border-radius: 90px;
+    color: #fff;
+    padding: 0.3em;
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+  }
+
   .caption span.border {
     background-color: rgba(17, 17, 17, 0.5);
     border-radius: 90px;

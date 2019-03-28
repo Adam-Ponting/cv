@@ -59,7 +59,7 @@ export default {
           name: "2",
           image:
             "https://live-admin-vjv1.tigerbay.co.uk/resize.ashx?f=Giant%20Genghis%20Khan%20Statue.jpg&w=0&h=0",
-          link: "TributePage"
+          link: "tribute"
         },
         {
           name: "3",
