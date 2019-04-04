@@ -37,7 +37,7 @@ export default {};
 .flex-container {
   display: flex;
   flex-direction: row;
-  height: 100vh;
+  height: 100%;
   min-height: fit-content;
   flex: 1 1 50%;
   flex-wrap: nowrap;
@@ -45,6 +45,8 @@ export default {};
 }
 .pic {
   background: url("../assets/adam.jpg") no-repeat center;
+  background-size: cover;
+  height: 600px;
   flex: 1 0 50%;
 }
 .intro {
@@ -70,12 +72,12 @@ export default {};
   flex: 1 1 100%;
   text-decoration: none;
   background: $bglight;
-  color: $bgdarkfont;
+  color: $bglightfont;
   margin: 1em 0 0 0;
   padding: 0.5em 1em;
   width: fit-content;
   box-sizing: border-box;
-  border: 1px solid $bglightfont;
+  border: 1px solid $buttonBorder;
   border-radius: 45px;
   margin: 1em 0;
 }
