@@ -5,49 +5,38 @@
       <h1 class="tracking-in-expand">adam ponting</h1>
       <div class="rotate-in-center dash">-</div>
     </div>
+    <div><img :src="image" alt="">{{image}}</div>
   </div>
 </template>
 
 <script>
-export default {};
+import firebase from '../firebase'
+export default {
+  data() {
+    return {
+      image: ''
+    }
+  },
+};
 </script>
 
 <style scoped lang="scss">
-@import "src/assets/css/colorscheme.scss";
-
 .flex-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  background: url("../assets/sunset.jpg") no-repeat center;
+  background: url("gs://adp-cv.appspot.com/home/sunset.jpg") no-repeat cover;
+  // background: url("https://firebasestorage.googleapis.com/v0/b/adp-cv.appspot.com/o/home%2Fsunset.jpg?alt=media&token=999208b6-d3c1-40a5-939b-5ba9478581fb")
+  //no-repeat center;
   background-size: cover;
   height: 100vh;
 }
 .flex-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   color: white;
   flex-wrap: nowrap;
@@ -60,25 +49,23 @@ export default {};
   font-size: 3em;
   letter-spacing: 0.2em;
   text-align: center;
-  margin: 0 0.2em;
+  padding: 0 0.2em;
 }
 .flex-item .dash {
-  position: relative;
-  display: inline-block;
   color: white;
   font-size: 3em;
   padding: 0;
 }
 
 .rotate-in-center {
-  -webkit-animation: rotate-in-center 3s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+  -webkit-animation: rotate-in-center 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2s
     both;
-  animation: rotate-in-center 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: rotate-in-center 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2s both;
 }
 .tracking-in-expand {
   -webkit-animation: tracking-in-expand 1.7s cubic-bezier(0.215, 0.61, 0.355, 1)
-    both;
-  animation: tracking-in-expand 1.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+    3s both;
+  animation: tracking-in-expand 1.7s cubic-bezier(0.215, 0.61, 0.355, 1) 3s both;
 }
 @-webkit-keyframes rotate-in-center {
   0% {
