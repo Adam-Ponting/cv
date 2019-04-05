@@ -1,5 +1,6 @@
 <template>
   <div>
+    <app-nav />
     <app-test />
     <app-welcome />
     <app-my-story />
@@ -11,6 +12,8 @@
 </template>
 
 <script>
+import AppNav from "@/components/AppNav.vue";
+
 import AppIntro from "@/components/AppIntro.vue";
 import AppStory from "@/components/AppStory.vue";
 import AppWorks from "@/components/AppWorks.vue";
@@ -20,6 +23,7 @@ import AppMyStory from "@/components/AppMyStory.vue";
 import AppMySkills from "@/components/AppMySkills.vue";
 export default {
   components: {
+    AppNav,
     AppIntro,
     AppStory,
     AppWorks,

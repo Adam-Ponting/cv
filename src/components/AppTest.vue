@@ -1,35 +1,40 @@
 <template>
   <div class="flex-wrapper">
+    <!-- 
+    <app-nav class="nav"/>
+
+     -->
     <div class="flex-item">
       <div class="rotate-in-center dash">-</div>
       <h1 class="tracking-in-expand">adam ponting</h1>
       <div class="rotate-in-center dash">-</div>
     </div>
-    <div><img :src="image" alt="">{{image}}</div>
   </div>
 </template>
 
 <script>
-import firebase from '../firebase'
 export default {
+  components: {},
   data() {
-    return {
-      image: ''
-    }
-  },
+    return {};
+  }
 };
 </script>
 
 <style scoped lang="scss">
+.nav {
+  z-index: 2;
+  align-self: flex-start;
+  flex: 1 1 100%;
+}
 .flex-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  background: url("gs://adp-cv.appspot.com/home/sunset.jpg") no-repeat cover;
-  // background: url("https://firebasestorage.googleapis.com/v0/b/adp-cv.appspot.com/o/home%2Fsunset.jpg?alt=media&token=999208b6-d3c1-40a5-939b-5ba9478581fb")
-  //no-repeat center;
+  background: url("https://firebasestorage.googleapis.com/v0/b/adp-cv.appspot.com/o/home%2Fsunset.jpg?alt=media&token=999208b6-d3c1-40a5-939b-5ba9478581fb")
+    no-repeat center;
   background-size: cover;
   height: 100vh;
 }

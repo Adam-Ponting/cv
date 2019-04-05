@@ -18,6 +18,7 @@
 // remove chrome margin
 body {
   margin: 0px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 #nav {
   padding: 30px;

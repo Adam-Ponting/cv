@@ -1,5 +1,5 @@
 <template>
-  <div class="flex-container">
+  <div class="flex-container" id="Skills">
     <img src="../assets/mountain.jpg" alt class="side-image" />
     <div class="side-content">
       <h2 class="side-header">- my skills</h2>

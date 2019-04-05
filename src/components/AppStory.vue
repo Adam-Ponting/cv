@@ -1,5 +1,5 @@
 <template>
-  <div class="flex-container">
+  <div class="flex-container" id="Story">
     <div class="intro">
       <h2>- My Story</h2>
       <p>I am organised, highly motivated and have an eye for detail.</p>
