@@ -2,7 +2,7 @@
   <div id="nav-bar">
     <ul>
       <a :href="links[0].href">
-        <img :src="links[0].image" alt height="46px;" />
+        <img :src="links[0].image" />
       </a>
       <li v-for="(link, index) in links.slice(1)" :key="index">
         <a :href="link.href">{{ link.name }}</a>

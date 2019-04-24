@@ -36,14 +36,14 @@ export default {
         spaceBetween: 10,
         breakpoints: {
           // when window width is <= 480px
-          /*    480: {
+          480: {
             slidesPerView: 1,
-            spaceBetween: 20
-          }, */
+            spaceBetween: 10
+          },
           // when window width is <= 640px
           768: {
             slidesPerView: 2,
-            spaceBetween: 30
+            spaceBetween: 10
           }
         },
         keyboard: {
@@ -85,7 +85,7 @@ export default {
           name: "5",
           image:
             "https://dailyburn.com/life/wp-content/uploads/2013/08/Running-Form_1.jpg",
-          url: "https://run-10k.firebaseapp.com/"
+          url: "https://adp-run-10k.firebaseapp.com/home"
         }
         /*  {
           name: "6",

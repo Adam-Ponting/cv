@@ -13,7 +13,6 @@
 <script>
 import AppNav from "@/components/AppNav.vue";
 import AppFooter from "@/components/AppFooter.vue";
-
 import AppStory from "@/components/AppStory.vue";
 import AppSkills from "@/components/AppSkills.vue";
 import AppWorks from "@/components/AppWorks.vue";
@@ -31,5 +30,3 @@ export default {
   }
 };
 </script>
-
-<style scoped lang="scss"></style>
