@@ -1,7 +1,7 @@
 <template>
-  <div class="app-works" id="Works">
-    <div class="works">
-      <h2>- my works</h2>
+  <div id="works">
+    <div class="my-work">
+      <h2>my works</h2>
       <div>
         <p>
           I have designed a variety of sites encapsulating HTML, CSS and
@@ -10,6 +10,10 @@
           delete data.
         </p>
         <p>Click through to sample my work.</p>
+        <a
+          href="https://appdividend.com/2018/07/04/how-to-create-hover-animation-in-vuejs/"
+          >https://appdividend.com/2018/07/04/how-to-create-hover-animation-in-vuejs/</a
+        >
       </div>
     </div>
     <app-works-scroll />
@@ -25,52 +29,3 @@ export default {
   }
 };
 </script>
-
-<style scoped lang="scss">
-@import "src/assets/css/colorscheme.scss";
-
-.app-works {
-  display: flex;
-  flex-direction: column;
-  background: $bglight;
-  color: $bglightfont;
-}
-.works {
-  display: flex;
-  flex-direction: row;
-  // justify-content: space-between;
-  align-items: center;
-  padding: 1em 4em;
-}
-.works > h2 {
-  flex: 1 1 20%;
-  text-transform: capitalize;
-  text-align: center;
-}
-.works > div {
-  flex: 1 1 80%;
-  padding: 0 1em;
-}
-.apps {
-  display: flex;
-  flex-direction: row;
-  background: $bgdark;
-  color: $bgdarkfont;
-  justify-content: space-evenly;
-}
-.apps div {
-  flex: 1 0 1px;
-  text-align: center;
-  width: 100px;
-  height: 100px;
-  border: 1px solid greenyellow;
-}
-@media screen and (max-width: 768px) {
-  .works {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1em 3em;
-  }
-}
-</style>

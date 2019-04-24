@@ -1,43 +1,36 @@
 <template>
-  <div class="flex-container" id="Story">
-    <div class="intro">
-      <h2>- My Story</h2>
-      <p>I am organised, highly motivated and have an eye for detail.</p>
-      <p>
-        I have had an interest in web development for many years and after a
-        period working abroad I am looking to turn this interest into a career.
-      </p>
-      <p>
-        I am looking forward to undertaking a new role in finance as I feel this
-        is an area that matches well with my own skills and ambitions. Whilst
-        searching for this role, I am keen to gain experience working in an
-        office environment through temporary work.
-      </p>
+  <div id="story">
+    <div class="flex-container">
+      <div class="pic"></div>
 
-      <p>
-        I have considerable experience working in teams towards business goals
-        and I am calm under pressure. I am IT literate with good knowledge of
-        Microsoft Office. I am looking forward to undertaking a new role in
-        finance as I feel this is an area that matches well with my own skills
-        and ambitions. Whilst searching for this role, I am keen to gain
-        experience working in an office environment through temporary work.
-      </p>
+      <div class="intro">
+        <h2>My Story</h2>
+        <p>
+          Hello, and welcome to my website. My name is Adam and I'm a
+          self-taught developer.
+        </p>
+        <p>
+          I have had an interest in web development since the days of dial-up
+          modems have recently been teaching myself the skills I need to work in
+          this industry
+        </p>
+      </div>
     </div>
-    <div class="pic"></div>
   </div>
 </template>
 
-<script>
-export default {};
-</script>
-
 <style scoped lang="scss">
 @import "src/assets/css/colorscheme.scss";
+#story {
+  max-width: 1200px;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
 
 .flex-container {
   display: flex;
   flex-direction: row;
-  height: 100vh;
+  height: 70vh;
   min-height: fit-content;
   flex: 1 1 50%;
   flex-wrap: nowrap;
@@ -50,45 +43,29 @@ export default {};
 .intro {
   display: flex;
   flex-direction: column;
-  background: $bgclear;
-  color: $bgclearfont;
+  justify-content: space-between;
+  background: $bg-lighter;
+  color: $primary;
   flex: 1 1 50%;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 5em 2em 1em;
-  justify-content: space-around;
-
-  // color: rgb(57, 88, 166);
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+  line-height: 2rem;
+  font-size: 1.3rem;
 }
 .intro > h2 {
-  color: $bglightfont;
-
-  font-weight: 600;
+  text-transform: capitalize;
+  font-variant: small-caps;
+  font-weight: bold;
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+  color: $alt;
+  &:before {
+    content: "-";
+  }
 }
 .intro > p::first-letter {
   font-size: 1.5em;
-  color: $bglightfont;
-}
-
-@media screen and (max-width: 768px) {
-  .flex-container {
-    flex-wrap: wrap;
-    min-height: fit-content;
-  }
-  .pic {
-    background: url("../assets/adam3.jpg") no-repeat top center;
-    background-size: cover;
-    flex: 1 1 100%;
-    height: 50%;
-    order: 0;
-  }
-  .intro {
-    flex: 1 1 100%;
-    padding: 1em 1em;
-    order: 1;
-  }
-  .intro h2 {
-    align-self: center;
-  }
+  color: $alt;
 }
 </style>

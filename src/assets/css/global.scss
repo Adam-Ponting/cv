@@ -1,0 +1,146 @@
+// imports
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+// colors
+$primary: #30a0ee;
+$error: #ef5777;
+$success: #1abc9c;
+$light: #f5f8fa;
+$medium: #657786;
+$dark: #34495e;
+$white: #fff;
+// resets
+body {
+  margin: 0;
+  color: $light;
+  background: #fdfdfd;
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+
+ // &:hover {
+    //	color: lighten($primary, 5%);
+ // }
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+  transition: 0.15s;
+
+  &:focus {
+    outline: none;
+  }
+}
+// fonts
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0 0 0.5rem;
+}
+
+h1 {
+  font-size: 2rem;
+  cursor: default
+
+}
+
+h2 {
+  font-size: 1.8rem;
+  cursor: default
+
+}
+
+h3 {
+  font-size: 1.6rem;
+  cursor: default
+
+}
+
+h4 {
+  font-size: 1.4rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+p {
+  line-height: 1.5;
+  cursor: default
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+
+  //&:hover {
+    //	color: lighten($primary, 5%);
+ // }
+}
+
+// globals
+section {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 742px) {
+    display: block;
+  }
+}
+
+[v-cloak] {
+  display: none;
+}
+
+.button {
+  background: $primary;
+  border: 0;
+  outline: 0;
+  color: $white;
+  padding: 0.8rem 1rem;
+  min-width: 150px;
+  font-size: 16px;
+  border-radius: 3px;
+  cursor: pointer;
+
+  &:hover {
+    background: lighten($primary, 5%);
+  }
+  &:disabled {
+    opacity: 0.5;
+
+    &:hover {
+      background: $primary;
+    }
+  }
+}
+
+// transitions
+.fade-enter-active {
+  transition: opacity 0.5s;
+}
+.fade-leave-active {
+  transition: opacity 0s;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}

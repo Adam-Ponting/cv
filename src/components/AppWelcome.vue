@@ -1,90 +1,63 @@
 <template>
-  <div class="flex-container">
-    <h2 class="welcome-header">- welcome</h2>
-    <p class="welcome-paragraph">
-      I'm a self-taught front-end web developer with a love of performant,
-      beautiful, and usable web applications.
-    </p>
-    <div class="welcome-contact">
-      <a href="tel:+447904163870">
-        <font-awesome-icon icon="phone" rotation="90" class="fa-icon" />+44 7904
-        163870
-      </a>
-      <a href="mailto:adamponting@outlook.com">
-        <font-awesome-icon
-          icon="envelope"
-          class="fa-icon"
-        />adamponting@outlook.com
-      </a>
+  <div id="welcome">
+    <div class="welcome-wrapper">
+      <h2>welcome</h2>
+      <p>
+        I'm a self-taught front-end web developer with a love of performant,
+        beautiful, and usable web applications.
+      </p>
+
+      <div class="welcome-brief">
+        <div>
+          <font-awesome-icon icon="user-tie" class="icon" />
+          <h3>who am i?</h3>
+          <br />
+          <p>
+            I have almost 20 years experience in the sports industry. The
+            majority of which as a tennis coach and recently as a cycle guide
+            and mechanic.
+            <br />I have also worked in Europe for four years and since
+            returning to England I have been working as a WorkShop Manager at
+            Evans Cycles and studying the necessary skills to become a front end
+            developer.
+          </p>
+        </div>
+        <div>
+          <font-awesome-icon icon="seedling" class="icon" />
+          <h3>what i do</h3>
+          <br />
+          <p>
+            I have studied
+            <strong>HTML5</strong>, <strong>CSS3</strong> and
+            <strong>JavaScript</strong>. I have built my projects using the
+            <strong>Vue</strong> framework so these are the skills I am most
+            proficient in. <br />I am always learning and refining my skills and
+            am excited to develop myself with each project I do and look forward
+            to growing my skills in web development.
+          </p>
+        </div>
+        <div>
+          <font-awesome-icon icon="envelope" class="icon" />
+          <h3>Contact me</h3>
+          <br />
+          <p>I can be contacted via email:</p>
+          <a href="mailto:adamponting@outlook.com">
+            <font-awesome-icon
+              icon="envelope"
+              class="fa-icon"
+            />adamponting@outlook.com
+          </a>
+          <br />
+          <br />
+          <p>View and contact me via GitHub:</p>
+          <a href="https://github.com/Mada75" target="_blank">
+            <font-awesome-icon
+              :icon="['fab', 'github']"
+              class="fa-icon"
+            />https://github.com/Mada75
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </template>
-
-<script>
-export default {};
-</script>
-
-<style lang="scss" scoped>
-@import "src/assets/css/colorscheme.scss";
-
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 2em;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background: #472ada;
-  color: white;
-}
-.welcome-header {
-  flex: 1 1 30%;
-  text-transform: capitalize;
-  font-variant: small-caps;
-  font-weight: bold;
-  font-size: 2em;
-  letter-spacing: 0.2em;
-  color: #48e7e9;
-}
-.welcome-paragraph {
-  flex: 1 1 70%;
-  line-height: 2em;
-  color: white;
-}
-.welcome-contact {
-  flex: 1 1 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.welcome-contact a {
-  text-decoration: none;
-  background: $bgdark;
-  color: #c0b4ff;
-  padding: 0.7em;
-  border: 1px solid #c0b4ff;
-  border-radius: 45px;
-  margin: 0.5em 0;
-  flex: 0 1 1;
-  min-width: 20%;
-  text-align: center;
-}
-.welcome-contact a .fa-icon {
-  margin-right: 0.3em;
-  color: #c0b4ff;
-}
-.welcome-contact a:hover {
-  text-decoration: underline;
-  color: $bglightfont;
-  background: $bglight;
-  border-radius: 45px;
-  border: 1px solid $bglight;
-}
-.welcome-contact a:hover .fa-icon {
-  color: $bgdarkfont;
-}
-</style>

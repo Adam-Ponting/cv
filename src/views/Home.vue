@@ -1,36 +1,33 @@
 <template>
   <div>
     <app-nav />
-    <app-test />
+    <app-splash />
     <app-welcome />
-    <app-my-story />
-    <app-my-skills />
-    <app-intro />
     <app-story />
+    <app-skills />
     <app-works />
+    <app-footer />
   </div>
 </template>
 
 <script>
 import AppNav from "@/components/AppNav.vue";
+import AppFooter from "@/components/AppFooter.vue";
 
-import AppIntro from "@/components/AppIntro.vue";
 import AppStory from "@/components/AppStory.vue";
+import AppSkills from "@/components/AppSkills.vue";
 import AppWorks from "@/components/AppWorks.vue";
-import AppTest from "@/components/AppTest.vue";
+import AppSplash from "@/components/AppSplash.vue";
 import AppWelcome from "@/components/AppWelcome.vue";
-import AppMyStory from "@/components/AppMyStory.vue";
-import AppMySkills from "@/components/AppMySkills.vue";
 export default {
   components: {
     AppNav,
-    AppIntro,
+    AppFooter,
     AppStory,
     AppWorks,
-    AppTest,
+    AppSplash,
     AppWelcome,
-    AppMyStory,
-    AppMySkills
+    AppSkills
   }
 };
 </script>
