@@ -5,6 +5,7 @@
     <app-welcome />
     <app-story />
     <app-skills />
+    <splash-image />
     <app-works />
     <app-footer />
   </div>
@@ -18,6 +19,7 @@ import AppSkills from "@/components/AppSkills.vue";
 import AppWorks from "@/components/AppWorks.vue";
 import AppSplash from "@/components/AppSplash.vue";
 import AppWelcome from "@/components/AppWelcome.vue";
+import SplashImage from "@/components/SplashImage.vue";
 export default {
   components: {
     AppNav,
@@ -26,7 +28,8 @@ export default {
     AppWorks,
     AppSplash,
     AppWelcome,
-    AppSkills
+    AppSkills,
+    SplashImage
   }
 };
 </script>

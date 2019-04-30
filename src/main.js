@@ -22,7 +22,10 @@ import {
   faSpinner,
   faGraduationCap,
   faChevronRight,
-  faChevronLeft
+  faChevronLeft,
+  faBars,
+  faTimes,
+  faClock
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faJs,
@@ -71,7 +74,10 @@ library.add(
   faSpinner,
   faGraduationCap,
   faChevronRight,
-  faChevronLeft
+  faChevronLeft,
+  faBars,
+  faTimes,
+  faClock
 );
 // use font-awesome-icon for icons
 Vue.component("font-awesome-icon", FontAwesomeIcon);

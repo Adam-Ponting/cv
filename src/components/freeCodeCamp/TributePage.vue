@@ -303,18 +303,10 @@ export default {
 
 <style lang="scss" scoped>
 .bgimg-1,
-.bgimg-5 {
-  position: relative;
-  opacity: 0.65;
-  height: 100vh;
-  // background-attachment: fixed;
-  background-position: center;
-  // background-repeat: no-repeat;
-  background-size: cover;
-}
 .bgimg-2,
 .bgimg-3,
 .bgimg-4,
+.bgimg-5,
 .bgimg-6 {
   position: relative;
   opacity: 0.65;
@@ -322,6 +314,10 @@ export default {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.bgimg-1,
+.bgimg-5 {
+  height: 100vh;
 }
 .bgimg-1 {
   background-image: url("https://firebasestorage.googleapis.com/v0/b/adp-cv.appspot.com/o/mongolia%2Fmongolia1.jpg?alt=media&token=d265d904-45a7-4ad7-9a1e-378d69070801");
@@ -343,7 +339,6 @@ export default {
 }
 .bgimg-5 {
   background-image: url("https://firebasestorage.googleapis.com/v0/b/adp-cv.appspot.com/o/mongolia%2Fmongolia5.jpg?alt=media&token=386f406a-f02f-4ee3-8154-5276b394b954");
-
   min-height: 400px;
 }
 .bgimg-6 {
@@ -435,7 +430,7 @@ export default {
   padding: 3em 5em;
   text-align: justify;
 }
-/* Turn off parallax scrolling for tablets and phones */
+/* Turn off parallax scrolling for tablets and under */
 @media screen and (max-width: 768px) {
   .bgimg-1,
   .bgimg-2,
@@ -447,16 +442,20 @@ export default {
     background-position: center;
     background-size: cover;
     opacity: 0.9;
-    min-height: 200px;
-    height: fit-content;
+    min-height: 350px;
   }
+
+  .bgimg-5 {
+    height: auto;
+    width: 100%;
+  }
+
   .caption.top {
     padding: 0;
   }
   .caption.top span.border {
     background-color: rgba(17, 17, 17, 0.5);
     border-radius: 90px;
-
     line-height: 2em;
     font-size: 1.1em;
   }
@@ -468,11 +467,9 @@ export default {
     font-size: 1.1em;
     letter-spacing: 0.1em;
   }
-
   .caption span.border {
     background-color: rgba(17, 17, 17, 0.5);
     border-radius: 90px;
-
     line-height: 2em;
     font-size: 1.1em;
   }
@@ -496,7 +493,6 @@ export default {
     color: #ddd;
     background-color: rgba(40, 46, 52, 1);
     text-align: center;
-
     padding: 1em 1em;
   }
 }

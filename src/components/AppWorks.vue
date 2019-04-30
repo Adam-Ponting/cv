@@ -8,13 +8,6 @@
         databases, allowing registered users to create, read, update and delete
         data.
       </p>
-      <p>
-        Click through to sample my work.
-        <a
-          href="https://appdividend.com/2018/07/04/how-to-create-hover-animation-in-vuejs/"
-          >/how-to-create-hover-animation-in-vuejs/</a
-        >
-      </p>
     </div>
     <app-works-scroll />
   </div>

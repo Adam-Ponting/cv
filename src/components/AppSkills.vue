@@ -11,6 +11,17 @@
           communication skills required to articulate effectively and the
           determination and drive to succeed in web development.
         </p>
+        <p>
+          areas such as client-side components, server-side languages, web
+          application frameworks and database management systems, as well as
+          experience with version control systems, and a thorough understanding
+          of the architecture of web applications and web security and
+          encryption. You will need to have: attention to detail a logical
+          approach to problem solving the ability to work independently and in
+          mixed teams experience of development methodologies (like agile and
+          waterfall) the ability to manage a complex range of tasks and meet
+          deadlines good communication skills.
+        </p>
       </div>
 
       <!--
@@ -27,71 +38,124 @@
       -->
 
       <div class="skill-icon">
-        <font-awesome-icon :icon="['fab', 'html5']" class="fa-icon" />
+        <font-awesome-icon
+          style="color:#F16529"
+          :icon="['fab', 'html5']"
+          title="HTML5"
+          class="fa-icon"
+        />
         <div class="skill-text">
           <h3>HyperText Markup Language (HTML)</h3>
           <p>
-            This is skill I started to learn first, starting with using notepad
-            and writing each line.I am very pleased with
-            <strong>VSCode</strong> to do the simple parts for me! The building
-            block for all my development starts with good, simple HMTL
-            structure.
+            This is where it all begins! The building block for all my
+            development starts with
+            <strong>good</strong> and <strong>simple</strong> HMTL structure.
           </p>
         </div>
       </div>
 
       <div class="skill-icon">
-        <font-awesome-icon :icon="['fab', 'css3-alt']" class="fa-icon" />
+        <font-awesome-icon
+          style="color:#DD3A0A"
+          :icon="['fab', 'css3-alt']"
+          title="CSS3"
+          class="fa-icon"
+        />
         <div class="skill-text">
           <h3>Cascading Style Sheets (CSS)</h3>
-          <p>CSS is used to style and shape my sites.</p>
+          <p>
+            I have enjoyed learning CSS to
+            <strong>style</strong> and shape my sites.
+            <strong>Animations</strong> and <strong>transitions</strong> in
+            particular open up many options to engage the user and are an area
+            I'm keen to develop in
+          </p>
         </div>
       </div>
 
       <div class="skill-icon">
-        <font-awesome-icon :icon="['fab', 'js']" class="fa-icon" />
+        <font-awesome-icon
+          style="color:#F0DB4F"
+          :icon="['fab', 'js']"
+          title="javaScript"
+          class="fa-icon"
+        />
         <div class="skill-text">
           <h3>JavaScript</h3>
           <p>
-            I would say JavaScript is the skill with the most scope for
-            continued learning and increased efficiency. I use
-            <strong>ES6</strong> code where possible and am always practicing
-            and learning new code, including
+            JavaScript is continuing to grow in use and is where I focus my
+            continued learning and increased
+            <strong>efficiency</strong>. I use <strong>ES6</strong> code where
+            possible and am always practicing and learning new code, including
             <strong>ES.Next</strong>
           </p>
         </div>
       </div>
 
       <div class="skill-icon">
-        <font-awesome-icon :icon="['fab', 'vuejs']" class="fa-icon" />
+        <font-awesome-icon
+          style="color:#41B883"
+          :icon="['fab', 'vuejs']"
+          title="Vue"
+          class="fa-icon"
+        />
         <div class="skill-text">
           <h3>Vue</h3>
           <p>
-            I have been using and learning Vue since I started JavaScript and
-            love its simple syntax, great support and ease of use. All my
-            projects are build in Vue and I use
-            <strong>Vuex</strong> and <strong>vue-router</strong> where needed.
-            While I am comfortable with the Vue framwork I am keen to learn
-            <strong>React</strong> and
+            I have been using and learning Vue alongside JavaScript and love its
+            simple syntax, great support and ease of use. All my projects are
+            built in Vue and I use
+            <strong>Vuex</strong> and <strong>Vue-router</strong> where needed.
+            While I am comfortable with the Vue framework I am keen to branch
+            into <strong>React</strong> and
             <strong>Angular</strong>
           </p>
         </div>
       </div>
 
       <div class="skill-icon">
-        <font-awesome-icon :icon="['fab', 'sass']" class="fa-icon" />
+        <font-awesome-icon
+          style="color:#472ada"
+          :icon="['fas', 'mobile-alt']"
+          title="Responsive Design"
+          class="fa-icon"
+        />
         <div class="skill-text">
-          <h3>SCSS</h3>
+          <h3>Responsive Design</h3>
           <p>
-            I use SCSS to set and use
-            <strong>variables</strong>, <strong>functions</strong>, or perform
-            arithmetic operations..
+            With the changing ways we view and interact with screens I design
+            each website to the latest standards to be responsive and ensure the
+            user gets the best experience. I have used a combination of
+            <strong>Flexbox</strong>, <strong>CSS Grid</strong> and CSS
+            frameworks such as <strong>Bootstrap</strong> to design my portfolio
           </p>
         </div>
       </div>
 
       <div class="skill-icon">
-        <font-awesome-icon :icon="['fab', 'github']" class="fa-icon" />
+        <font-awesome-icon
+          style="color:#bf4080"
+          :icon="['fab', 'sass']"
+          title="SCSS"
+          class="fa-icon"
+        />
+        <div class="skill-text">
+          <h3>SCSS</h3>
+          <p>
+            I use SCSS to set and use
+            <strong>variables</strong>, <strong>functions</strong>, and perform
+            <strong>arithmatic</strong> operations.
+          </p>
+        </div>
+      </div>
+
+      <div class="skill-icon">
+        <font-awesome-icon
+          style="color:#24292e"
+          :icon="['fab', 'github']"
+          title="GitHub"
+          class="fa-icon"
+        />
         <div class="skill-text">
           <h3>GitHub</h3>
           <p>
@@ -104,86 +168,132 @@
       </div>
 
       <div class="skill-icon">
-        <font-awesome-icon icon="mobile-alt" class="fa-icon" />
-        <div class="skill-text">
-          <h3>Responsive Design</h3>
-          <p>
-            With the changing ways we view and interact with screens I design
-            each website to the latest standards to be responsive and ensure the
-            user gets the best experience. I have used a combination of
-            <strong>Flexbox</strong>, <strong>CSS Grid</strong> and CSS
-            frameworks such as <strong>Bootstrap</strong> and
-            <strong>Bulma</strong> to design my portfolio
-          </p>
-        </div>
-      </div>
-
-      <div class="skill-icon">
-        <font-awesome-icon :icon="['fab', 'google']" class="fa-icon" />
+        <font-awesome-icon
+          style="color:#ff8f00"
+          :icon="['fab', 'google']"
+          title="Google Firebase"
+          class="fa-icon"
+        />
         <div class="skill-text">
           <h3>Google Firebase</h3>
           <p>
-            All of my sites are hosted on
-            <strong>Firebase</strong>, I use their <strong>hosting</strong>,
-            <strong>authentication</strong>, <strong>database</strong> and
-            <strong>storage</strong>. I have enjoyed learning how to interact
-            with a database, including <strong>CRUD</strong> (Create, Read,
-            Update, Delete) projects. I have also learnt to manage user accounts
-            and permissions and security such as
-            <strong>sanitizing</strong> data.
+            All of my sites are hosted on Google's Firebase servers, I use their
+            <strong>hosting</strong>, <strong>authentication</strong>,
+            <strong>database</strong> and <strong>storage</strong>. I have
+            enjoyed learning how to interact with a database, including
+            <strong>CRUD</strong> (Create, Read, Update, Delete) projects. I
+            have also learnt to manage user accounts and permissions and
+            security such as <strong>sanitizing</strong> data.
           </p>
         </div>
       </div>
 
       <div class="skill-icon">
-        <font-awesome-icon :icon="['fab', 'bootstrap']" class="fa-icon" />
-        <div class="skill-text">
-          <h3>Bootstrap</h3>
-          <p>
-            I have used Bootstrap to quickly design and build websites. I like
-            its vast library, and ease of use.
-          </p>
-        </div>
-      </div>
-
-      <div class="skill-icon">
-        <font-awesome-icon icon="bug" class="fa-icon" />
-        <div class="skill-text">
-          <h3>Testing</h3>
-          <p>
-            <a href="https://vuejs.org/v2/guide/unit-testing.html"
-              >https://vuejs.org/v2/guide/unit-testing.html</a
-            >
-          </p>
-        </div>
-      </div>
-
-      <div class="skill-icon">
-        <font-awesome-icon :icon="['fab', 'chrome']" class="fa-icon" />
+        <font-awesome-icon
+          style="color:#4C8BF5"
+          :icon="['fab', 'chrome']"
+          title="Browser Developer Tools"
+          class="fa-icon"
+        />
         <div class="skill-text">
           <h3>Browser Developer tools</h3>
           <p>
-            I use these tools to test and fine tune my pages in the browser
-            itself, allowing me to see the changes live. I use the console to
-            view and track any errors that
+            I Chrome Developer Tools to test and fine tune my pages in the
+            browser itself, allowing me to see the changes live. I use the
+            console to view and track any errors that
             <em>may</em> occur.
           </p>
         </div>
       </div>
 
-      <div class="skill-icon">
-        <font-awesome-icon :icon="['fab', 'npm']" class="fa-icon" />
+      <!--       <div class="skill-icon">
+        <font-awesome-icon
+          style="color:#472ada"
+          :icon="['fas', 'bug']"
+          title="Testing"
+          class="fa-icon"
+        />
         <div class="skill-text">
-          <h3>npm</h3>
+          <h3>Testing</h3>
+          <p>
+            <a href="https://vuejs.org/v2/guide/unit-testing.html">nope!</a>
+          </p>
+        </div>
+      </div>
+ -->
+      <div class="skill-icon">
+        <font-awesome-icon
+          style="color:#cb3837"
+          :icon="['fab', 'npm']"
+          title="Node Package Manager"
+          class="fa-icon"
+        />
+        <div class="skill-text">
+          <h3>Node Package Manager (npm)</h3>
           <p>
             I use npm to maintain, share and publish my dependencies and
-            projects
+            projects and have experience using
+            <strong>axios</strong> and
+            <strong>Highcharts</strong>
           </p>
         </div>
       </div>
 
       <div class="skill-icon">
-        <font-awesome-icon :icon="['fab', 'free-code-camp']" class="fa-icon" />
+        <font-awesome-icon
+          style="color:#080135"
+          :icon="['fab', 'bootstrap']"
+          title="Bootstrap"
+          class="fa-icon"
+        />
+        <div class="skill-text">
+          <h3>Bootstrap</h3>
+          <p>
+            I have used Bootstrap to quickly design and build websites. I like
+            its vast library the speed I can
+            <strong>prototype</strong> a website.
+          </p>
+        </div>
+      </div>
+
+      <div class="skill-icon">
+        <font-awesome-icon
+          style="color:#61b2a7"
+          :icon="['fas', 'clock']"
+          title="Moment.js"
+          class="fa-icon"
+        />
+        <div class="skill-text">
+          <h3>Moment.js</h3>
+          <p>
+            I have used Moment to parse, validate, manipulate, and display dates
+            and times in JavaScript.
+          </p>
+        </div>
+      </div>
+
+      <div class="skill-icon">
+        <font-awesome-icon
+          style="color:#472ada"
+          :icon="['fas', 'terminal']"
+          title="Command Line Interface"
+          class="fa-icon"
+        />
+        <div class="skill-text">
+          <h3>Command Line Interface (CLI)</h3>
+          <p>
+            I am happy to use the CLI where it is needed to solve a problem.
+          </p>
+        </div>
+      </div>
+
+      <div class="skill-icon">
+        <font-awesome-icon
+          style="color:#006400"
+          :icon="['fab', 'free-code-camp']"
+          title="freeCodeCamp"
+          class="fa-icon"
+        />
         <div class="skill-text">
           <h3>freeCodeCamp</h3>
           <p>
@@ -193,31 +303,21 @@
         </div>
       </div>
 
-      <div class="skill-icon">
-        <font-awesome-icon :icon="['fab', 'linkedin']" class="fa-icon" />
+      <!--       <div class="skill-icon">
+        <font-awesome-icon
+          style="color:#0077b5"
+          :icon="['fab', 'linkedin']"
+          title="LinkedIn"
+          class="fa-icon"
+        />
         <div class="skill-text">
           <h3>linkin</h3>
           <p>
-            <a href="https://www.linkedin.com/in/adam-ponting/" target="_blank"
-              >www.linkedin.com/in/adam-ponting</a
-            >
+            <a href="https://www.linkedin.com/in/adam-ponting/" target="_blank">linkedin</a>
           </p>
         </div>
       </div>
-
-      <div class="skill-icon">
-        <font-awesome-icon icon="terminal" class="fa-icon" />
-        <div class="skill-text">
-          <h3>Command Line Interface (CLI)</h3>
-          <p>
-            I enjoy using a Graphical User Interface (GUI) for their ease of use
-            and will use a GUI for the majority of my work. However I am happy
-            to use the CLI where it is needed to solve a problem.
-          </p>
-        </div>
-      </div>
+      -->
     </div>
   </div>
 </template>
-
-<style lang="scss" scoped></style>

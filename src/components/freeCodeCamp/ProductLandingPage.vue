@@ -188,6 +188,7 @@ export default {};
 #product-landing-page {
   background: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
 }
 .grid-container-nav {
   display: grid;
