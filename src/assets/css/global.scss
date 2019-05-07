@@ -2,13 +2,16 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 
 // colors
-$primary: #30a0ee;
+//$primary: #30a0ee;
+$primary: #3e444d;
+
 $error: #ef5777;
 $success: #1abc9c;
 $light: #f5f8fa;
 $medium: #657786;
 $dark: #34495e;
 $white: #fff;
+
 // resets
 body {
   margin: 0;
@@ -30,15 +33,15 @@ a {
   cursor: pointer;
   color: inherit;
 
- // &:hover {
-    //	color: lighten($primary, 5%);
- // }
+  // &:hover {
+  //	color: lighten($primary, 5%);
+  // }
 }
 
 * {
   font-family: "Open Sans", sans-serif;
   box-sizing: border-box;
-  transition: .25s;
+  transition: 0.25s;
 
   &:focus {
     outline: none;
@@ -56,20 +59,17 @@ p {
 
 h1 {
   font-size: 2rem;
-  cursor: default
-
+  cursor: default;
 }
 
 h2 {
   font-size: 1.8rem;
-  cursor: default
-
+  cursor: default;
 }
 
 h3 {
   font-size: 1.6rem;
-  cursor: default
-
+  cursor: default;
 }
 
 h4 {
@@ -82,7 +82,9 @@ h5 {
 
 p {
   line-height: 1.5;
-  cursor: default
+  font-size: 1.3rem;
+  color: $primary;
+  cursor: default;
 }
 
 a {
@@ -90,8 +92,8 @@ a {
   cursor: pointer;
 
   //&:hover {
-    //	color: lighten($primary, 5%);
- // }
+  //	color: lighten($primary, 5%);
+  // }
 }
 
 // globals

@@ -3,8 +3,8 @@
     <div class="welcome-wrapper">
       <h2>welcome</h2>
       <p>
-        I'm a self-taught front-end web developer with a love of performant,
-        beautiful, and usable web applications.
+        I'm a self-taught front-end web developer with a love of designing
+        beautiful and usable web applications.
       </p>
 
       <div class="welcome-brief">
@@ -14,12 +14,11 @@
           <br />
           <p>
             I have almost 20 years experience in the sports industry. The
-            majority of which as a tennis coach and recently as a cycle guide
-            and mechanic.
+            majority of which was as a tennis coach and recently as a cycle
+            guide and mechanic.
             <br />I have also worked in Europe for four years and since
-            returning to England I have been working as a WorkShop Manager at
-            Evans Cycles and studying the necessary skills to become a front end
-            developer.
+            returning to England I have been a Workshop Manager at Evans Cycles
+            and studying the necessary skills to become a front end developer.
           </p>
         </div>
         <div>
@@ -49,7 +48,7 @@
           </a>
           <br />
           <br />
-          <p>View and contact me via GitHub:</p>
+          <p>View my GitHub:</p>
           <a href="https://github.com/Mada75" target="_blank">
             <font-awesome-icon
               :icon="['fab', 'github']"

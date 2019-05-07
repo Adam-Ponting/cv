@@ -138,8 +138,6 @@
     > p {
       flex: 1 1 800px;
       padding-left: 1rem;
-      line-height: 2rem;
-      font-size: 1.3rem;
       text-align: justify;
       text-align-last: center;
     }
@@ -163,8 +161,6 @@
       p {
         text-align: justify;
         text-align-last: center;
-        line-height: 2rem;
-        font-size: 1.3rem;
       }
       a {
         font-size: 1.3rem;
@@ -209,7 +205,8 @@
     flex: 1 1 500px;
     background: url("../../assets/adam4.jpg") no-repeat center;
     background-size: cover;
-    height: 100%;
+    width: 100%;
+    min-height: 300px;
   }
   .intro {
     flex: 1 1 500px;
@@ -234,8 +231,6 @@
     p {
       text-align: justify;
       text-align-last: center;
-      line-height: 2rem;
-      font-size: 1.3rem;
     }
   }
 }
@@ -258,7 +253,7 @@
     .intro-header {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: flex-start;
       align-items: stretch;
       flex-wrap: wrap;
       padding-top: 2rem;
@@ -278,10 +273,7 @@
       > p {
         text-align: justify;
         text-align-last: center;
-
         flex: 1 1 800px;
-        line-height: 2rem;
-        font-size: 1.3rem;
       }
     }
     .fa-icon-skill {
@@ -372,9 +364,16 @@
     p {
       flex: 1 1 800px;
       padding-left: 1rem;
-      line-height: 2rem;
-      font-size: 1.3rem;
       text-align: center;
+      a{
+        color: $bg-pink;
+        text-decoration: underline;
+        text-decoration-color: transparent;
+        &:hover {
+          text-decoration: underline;
+        }
+    
+      }
     }
   }
 }
@@ -407,15 +406,24 @@
     }
     h4 {
       padding-top: 1.5rem;
-      color: $alt;
+      color: $bg-pink;
       cursor: pointer;
+      text-decoration: underline;
+      text-decoration-color: transparent;
+      &:hover {
+        text-decoration: underline
+      }
     }
     h5 {
       color: $alt;
+      text-transform: capitalize;
+      font-variant: small-caps;
+  
     }
     p {
       padding-top: 1.5rem;
-      color: $primary;
+      font-size: 1.1rem;
+      line-height: 1.3rem;
     }
     .skills-icons {
       display: flex;
@@ -451,11 +459,6 @@
   min-height: 40px;
   padding: 1rem 2rem;
   text-align: center;
-  p {
-    color: $primary;
-    line-height: 2rem;
-    font-size: 1.3rem;
-  }
   a {
     font-size: 1.3rem;
     line-height: 2rem;

@@ -423,10 +423,13 @@ export default {
   text-align: justify;
 }
 .text-main {
-  color: #ddd;
+  p {
+    color: #ddd;
+    padding: 10px;
+    font-size: 16px;
+  }
   background-color: #282e34;
   text-align: center;
-
   padding: 3em 5em;
   text-align: justify;
 }

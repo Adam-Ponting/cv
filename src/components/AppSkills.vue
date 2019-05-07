@@ -4,23 +4,17 @@
       <div class="intro-header">
         <h2>my skills</h2>
         <p>
-          I have a respect for the design, process, and craft of web
-          development, with an understanding of the client experience being
-          central to business needs. I enjoy working in a team and interacting
-          with people of different capabilities. I have the written and verbal
-          communication skills required to articulate effectively and the
-          determination and drive to succeed in web development.
-        </p>
-        <p>
-          areas such as client-side components, server-side languages, web
-          application frameworks and database management systems, as well as
-          experience with version control systems, and a thorough understanding
-          of the architecture of web applications and web security and
-          encryption. You will need to have: attention to detail a logical
-          approach to problem solving the ability to work independently and in
-          mixed teams experience of development methodologies (like agile and
-          waterfall) the ability to manage a complex range of tasks and meet
-          deadlines good communication skills.
+          I take great pride in my
+          <strong>attention to detail</strong> and throughout my career as a
+          sports coach and bike mechanic have a logical approach to
+          <strong>problem solving</strong>. <br />I have considerable experience
+          of working independently and in <strong>teams</strong>, including
+          management. This has involved managing complex ranges of tasks and
+          meeting <strong>deadlines</strong> and achieving
+          <strong>targets</strong>. <br />I have the written and verbal
+          <strong>communication</strong> skills required to articulate
+          effectively and the <strong>determination</strong> and drive to
+          succeed in web development.
         </p>
       </div>
 
@@ -220,7 +214,7 @@
           </p>
         </div>
       </div>
- -->
+      -->
       <div class="skill-icon">
         <font-awesome-icon
           style="color:#cb3837"

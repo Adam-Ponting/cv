@@ -10,7 +10,7 @@
         <img :src="slide.image" @click="routerPush(slide.link, slide.url)" />
         <h4 @click="routerPush(slide.link, slide.url)">{{ slide.title }}</h4>
         <p v-html="slide.description"></p>
-        <h5>Skills used:</h5>
+        <h5>Skills:</h5>
         <div class="skills-icons">
           <font-awesome-icon
             style="color:#F16529"
@@ -190,7 +190,7 @@ export default {
           image:
             "https://firebasestorage.googleapis.com/v0/b/adp-cv.appspot.com/o/worksScroll%2Frunlog.jpg?alt=media&token=df8d76b4-7c99-47dd-acb8-7846f1895848",
           url: "https://adp-run-10k.firebaseapp.com/home",
-          title: "My Hobby - Running Log",
+          title: "Hobby Project - Running Log",
           html5: true,
           css3: true,
           js: true,
@@ -207,7 +207,7 @@ export default {
           CLI: true,
           freeCodeCamp: false,
           description:
-            "Using Vue, Vuex, Vue Router, Firebase, databases, user authentication and accounts, security, responsive design, and ..."
+            "Using <strong>Vue</strong>, <strong>Vuex</strong>, <strong>Vue Router</strong>, Firebase <strong>databases</strong>, user <strong>authentication</strong> and <strong>security</strong>, <strong>responsive</strong> design. <br/> I've designed a running training plan with user accounts and data."
         },
         {
           image:
@@ -215,7 +215,7 @@ export default {
           link: "tribute",
           title: "Responsive Web Design - Tribute Page",
           description:
-            "Showcasing <strong>responsive design</strong> in respect to images",
+            "A freeCodeCamp Project Showcasing <strong>HTML</strong> and <strong>CSS</strong> skills in respect to structure, layout and responsive design",
           html5: true,
           css3: true,
           js: false,
@@ -238,7 +238,7 @@ export default {
           link: "product",
           title: "Responsive Web Design - Product Landing Page",
           description:
-            " Built using <strong>CSS Grid</strong>, with a responsive layout. This is a mockup services page",
+            "A freeCodeCamp Project Showcasing <strong>CSS Grid</strong> including embedding videos and a responsive design",
           html5: true,
           css3: true,
           js: false,
@@ -255,14 +255,13 @@ export default {
           CLI: false,
           freeCodeCamp: true
         },
-
         {
           image:
             "https://firebasestorage.googleapis.com/v0/b/adp-cv.appspot.com/o/worksScroll%2Fsurvey.jpg?alt=media&token=7dc32b80-2fb8-407f-ba27-b762ff1767c6",
           link: "survey",
           title: "Responsive Web Design - Survey Form",
           description:
-            "A mockup survery form showing user data capture and using <strong>axios</strong> to interact with an external API",
+            "A survey form showing user data capture and using <strong>axios</strong> to interact with an external API",
           html5: true,
           css3: true,
           js: false,
@@ -278,9 +277,9 @@ export default {
           moment: false,
           CLI: false,
           freeCodeCamp: true
-        },
+        }
 
-        {
+        /*         {
           image:
             "https://firebasestorage.googleapis.com/v0/b/adp-cv.appspot.com/o/worksScroll%2Fsurvey.jpg?alt=media&token=7dc32b80-2fb8-407f-ba27-b762ff1767c6",
           url:
@@ -326,6 +325,7 @@ export default {
           CLI: false,
           freeCodeCamp: true
         }
+ */
       ]
     };
   },
