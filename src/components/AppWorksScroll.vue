@@ -257,15 +257,15 @@ export default {
         },
         {
           image:
-            "https://firebasestorage.googleapis.com/v0/b/adp-cv.appspot.com/o/worksScroll%2Fsurvey.jpg?alt=media&token=7dc32b80-2fb8-407f-ba27-b762ff1767c6",
-          link: "survey",
+            "https://firebasestorage.googleapis.com/v0/b/adp-cv.appspot.com/o/worksScroll%2Fbike-survey.jpg?alt=media&token=4d983a18-61dd-4530-850a-fc80521e7487",
+          url: "https://rwd-survey-form.netlify.com/",
           title: "Responsive Web Design - Survey Form",
           description:
-            "A survey form showing user data capture and using <strong>axios</strong> to interact with an external API",
+            "A responsive form that captures user input using <strong>CSS Flexbox</strong> and <strong>javaScript</strong> in <strong>Vue.js</strong>",
           html5: true,
           css3: true,
-          js: false,
-          vuejs: false,
+          js: true,
+          vuejs: true,
           responsive: true,
           sass: true,
           github: true,
