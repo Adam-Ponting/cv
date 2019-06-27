@@ -2,7 +2,9 @@
   <section>
     <h1>404 Page Missing</h1>
     <article>
-      <p>This page displays when a route is accessed that doesn't exist.</p>
+      <p>
+        This page displays when a route is accessed that doesn't exist.
+      </p>
     </article>
   </section>
 </template>

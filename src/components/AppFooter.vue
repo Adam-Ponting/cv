@@ -19,11 +19,11 @@
 export default {
   data() {
     return {
-      adp: "mailto:adamponting@outlook.com",
-      MIT: "http://opensource.org/licenses/mit-license.php",
-      gitHub: "https://github.com/Mada75",
-      licence: "http://creativecommons.org/licenses/by-nc-sa/4.0/"
-    };
+      adp: 'mailto:adamponting@outlook.com',
+      MIT: 'http://opensource.org/licenses/mit-license.php',
+      gitHub: 'https://github.com/Mada75',
+      licence: 'http://creativecommons.org/licenses/by-nc-sa/4.0/'
+    }
   }
-};
+}
 </script>

@@ -8,7 +8,9 @@
         <p>css - dmsadas</p>
         <p>javascripr - dmsadas</p>
         <p>vue - dmsadas</p>
-        <p>I am organised, highly motivated and have an eye for detail.</p>
+        <p>
+          I am organised, highly motivated and have an eye for detail.
+        </p>
         <p>
           I have had an interest in web development for many years and after a
           period working abroad I am looking to turn this interest into a
@@ -39,11 +41,11 @@
 </template>
 
 <script>
-export default {};
+export default {}
 </script>
 
 <style lang="scss" scoped>
-@import "src/assets/css/colorscheme.scss";
+@import 'src/assets/css/colorscheme.scss';
 
 .flex-container {
   display: flex;
@@ -51,7 +53,7 @@ export default {};
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   background: $bgdark;
   color: white;
 }

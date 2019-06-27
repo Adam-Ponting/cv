@@ -29,11 +29,18 @@
               id="firstname"
               placeholder="Enter your first name"
               v-model="form.firstname"
-              v-validate="{ required: true, max: 20, alpha: true }"
-              :class="{ input: true, 'is-danger': errors.has('firstname') }"
+              v-validate="{
+                required: true,
+                max: 20,
+                alpha: true
+              }"
+              :class="{
+                input: true,
+                'is-danger': errors.has('firstname')
+              }"
             />
             <span v-show="errors.has('firstname')" class="input-error">{{
-              errors.first("firstname")
+              errors.first('firstname')
             }}</span>
             <br />
             <input
@@ -42,11 +49,18 @@
               id="surname"
               placeholder="Enter your surname"
               v-model="form.surname"
-              v-validate="{ required: true, max: 20, alpha: true }"
-              :class="{ input: true, 'is-danger': errors.has('surname') }"
+              v-validate="{
+                required: true,
+                max: 20,
+                alpha: true
+              }"
+              :class="{
+                input: true,
+                'is-danger': errors.has('surname')
+              }"
             />
             <span v-show="errors.has('surname')" class="input-error">{{
-              errors.first("surname")
+              errors.first('surname')
             }}</span>
 
             <input
@@ -58,10 +72,13 @@
               @blur="lookUp()"
               @click="form.postcode = ''"
               v-validate="{ required: true, max: 10 }"
-              :class="{ input: true, 'is-danger': errors.has('postcode') }"
+              :class="{
+                input: true,
+                'is-danger': errors.has('postcode')
+              }"
             />
             <span v-show="errors.has('postcode')" class="input-error">{{
-              errors.first("postcode")
+              errors.first('postcode')
             }}</span>
             {{ searching }}
             <input
@@ -71,7 +88,10 @@
               disabled
               v-model="form.region"
               placeholder="Enter your postcode"
-              :class="{ input: false, 'is-danger': errors.has('postcode') }"
+              :class="{
+                input: false,
+                'is-danger': errors.has('postcode')
+              }"
             />
             <input
               type="text"
@@ -80,28 +100,41 @@
               disabled
               v-model="form.country"
               placeholder="Enter your postcode"
-              :class="{ input: false, 'is-danger': errors.has('postcode') }"
+              :class="{
+                input: false,
+                'is-danger': errors.has('postcode')
+              }"
             />
             <input
               type="email"
               name="email"
               id="email"
               v-validate="{ required: true, max: 30 }"
-              :class="{ input: true, 'is-danger': errors.has('email') }"
+              :class="{
+                input: true,
+                'is-danger': errors.has('email')
+              }"
             />
             <span v-show="errors.has('email')" class="input-error">{{
-              errors.first("email")
+              errors.first('email')
             }}</span>
 
             <input
               type="number"
               name="phone"
               id="phone"
-              v-validate="{ required: true, max: 15, alpha_num: true }"
-              :class="{ input: true, 'is-danger': errors.has('phone') }"
+              v-validate="{
+                required: true,
+                max: 15,
+                alpha_num: true
+              }"
+              :class="{
+                input: true,
+                'is-danger': errors.has('phone')
+              }"
             />
             <span v-show="errors.has('phone')" class="input-error">{{
-              errors.first("phone")
+              errors.first('phone')
             }}</span>
           </div>
           <br />
@@ -233,27 +266,27 @@
 </template>
 
 <script>
-import axios from "axios";
+import axios from 'axios'
 export default {
-  name: "app",
+  name: 'app',
   data() {
     return {
       form: {
-        firstname: "",
-        surname: "",
-        postcode: "",
-        region: "",
-        country: "",
-        email: "",
-        phone: ""
+        firstname: '',
+        surname: '',
+        postcode: '',
+        region: '',
+        country: '',
+        email: '',
+        phone: ''
       },
       jokes: [],
       loading: false,
       status: true,
       surnameStyle: true,
-      searching: "",
-      test: ""
-    };
+      searching: '',
+      test: ''
+    }
   },
   methods: {
     validateBeforeSubmit() {
@@ -261,39 +294,39 @@ export default {
         if (result) {
           // eslint-disable-next-line
           alert("Form Submitted!");
-          return;
+          return
         }
 
-        alert("Correct them errors!");
-      });
+        alert('Correct them errors!')
+      })
     },
     surname() {
-      this.status = true;
+      this.status = true
     },
     lookUp() {
       // https://stackoverflow.com/questions/40996344/axios-cant-set-data
       // http://michaelnthiessen.com/this-is-undefined/
 
-      this.searching = "searching";
+      this.searching = 'searching'
       axios
-        .get("https://api.postcodes.io/postcodes/" + this.form.postcode)
+        .get('https://api.postcodes.io/postcodes/' + this.form.postcode)
         .then(
           response => {
             //  console.log(response);
-            this.searching = "";
-            this.status = true;
-            this.form.region = response.data.result.parliamentary_constituency;
-            this.form.country = response.data.result.country;
+            this.searching = ''
+            this.status = true
+            this.form.region = response.data.result.parliamentary_constituency
+            this.form.country = response.data.result.country
           },
           error => {
-            this.searching = "";
-            this.form.postcode = "Please enter a valid postcode" + error;
-            this.status = false;
+            this.searching = ''
+            this.form.postcode = 'Please enter a valid postcode' + error
+            this.status = false
           }
-        );
+        )
     }
   }
-};
+}
 </script>
 
 <style scoped lang="scss">
@@ -325,7 +358,7 @@ input.is-danger {
 }
 .bg {
   background-size: 100%;
-  background: url("http://www.bannatynegroup.co.uk/assets/images/social-bg-2.jpg")
+  background: url('http://www.bannatynegroup.co.uk/assets/images/social-bg-2.jpg')
     no-repeat center;
   background-attachment: fixed;
   opacity: 0.2;
@@ -384,8 +417,8 @@ input.is-danger {
   box-sizing: border-box;
 }
 // Turn Off Number Input Spinners
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }

@@ -38,44 +38,44 @@ export default {
       navMenuOpen: false,
       navBarHidden: true,
       windowWidth: 0,
-      icon: "bars",
-      menu: "Menu",
+      icon: 'bars',
+      menu: 'Menu',
       links: [
         {
-          name: "",
-          href: "#",
+          name: '',
+          href: '#',
           image:
-            "https://firebasestorage.googleapis.com/v0/b/adp-cv.appspot.com/o/base%2Fadam-logo.jpg?alt=media&token=2aa71b01-e382-4c1e-b29f-184a44b73e3a"
+            'https://firebasestorage.googleapis.com/v0/b/adp-cv.appspot.com/o/base%2Fadam-logo.jpg?alt=media&token=2aa71b01-e382-4c1e-b29f-184a44b73e3a'
         },
-        { name: "Home", href: "#" },
-        { name: "MyStory", href: "#story" },
-        { name: "MySkills", href: "#skills" },
-        { name: "MyWorks", href: "#works" }
+        { name: 'Home', href: '#' },
+        { name: 'MyStory', href: '#story' },
+        { name: 'MySkills', href: '#skills' },
+        { name: 'MyWorks', href: '#works' }
       ]
-    };
+    }
   },
   methods: {
     getWindowWidth() {
-      this.windowWidth = document.documentElement.clientWidth;
+      this.windowWidth = document.documentElement.clientWidth
     },
     toggleBurgerMenu() {
-      this.navMenuOpen = !this.navMenuOpen;
+      this.navMenuOpen = !this.navMenuOpen
       if (this.navMenuOpen) {
-        this.icon = "times";
-        this.menu = "Close";
+        this.icon = 'times'
+        this.menu = 'Close'
       } else {
-        this.icon = "bars";
-        this.menu = "Menu";
+        this.icon = 'bars'
+        this.menu = 'Menu'
       }
     }
   },
   computed: {
     toggleMenu() {
-      let self = this;
+      let self = this
       if (this.windowWidth <= 1000) {
-        return (self.navBarHidden = false);
+        return (self.navBarHidden = false)
       } else {
-        return (self.navBarHidden = true);
+        return (self.navBarHidden = true)
       }
     }
   },
@@ -84,24 +84,24 @@ export default {
     // The function actually applying the offset
     function offsetAnchor() {
       if (location.hash.length !== 0) {
-        window.scrollTo(window.scrollX, window.scrollY - 64);
+        window.scrollTo(window.scrollX, window.scrollY - 64)
       }
     }
     // This will capture hash changes while on the page
-    window.addEventListener("hashchange", offsetAnchor);
+    window.addEventListener('hashchange', offsetAnchor)
     // This is here so that when you enter the page with a hash,
     // it can provide the offset in that case too. Having a timeout
     // seems necessary to allow the browser to jump to the anchor first.
-    window.setTimeout(offsetAnchor, 0.1); // The delay of 1 is arbitrary and may not always work right (although it did in my testing).
+    window.setTimeout(offsetAnchor, 0.1) // The delay of 1 is arbitrary and may not always work right (although it did in my testing).
 
     this.$nextTick(function() {
-      window.addEventListener("resize", this.getWindowWidth);
+      window.addEventListener('resize', this.getWindowWidth)
       //Init
-      this.getWindowWidth();
-    });
+      this.getWindowWidth()
+    })
   },
   beforeDestroy() {
-    window.removeEventListener("resize", this.getWindowWidth);
+    window.removeEventListener('resize', this.getWindowWidth)
   }
-};
+}
 </script>

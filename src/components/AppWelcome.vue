@@ -3,8 +3,8 @@
     <div class="welcome-wrapper">
       <h2>welcome</h2>
       <p>
-        I'm a self-taught front-end web developer with a love of designing
-        beautiful and usable web applications.
+        I'm a self-taught front-end web developer with a passion for designing
+        web applications.
       </p>
 
       <div class="welcome-brief">
@@ -16,9 +16,9 @@
             I have almost 20 years experience in the sports industry. The
             majority of which was as a tennis coach and recently as a cycle
             guide and mechanic.
-            <br />I have also worked in Europe for four years and since
+            <br />I have also worked in Europe for several years and since
             returning to England I have been a Workshop Manager at Evans Cycles
-            and studying the necessary skills to become a front end developer.
+            and began studying to become a front end developer.
           </p>
         </div>
         <div>
@@ -26,13 +26,13 @@
           <h3>what i do</h3>
           <br />
           <p>
-            I have studied
+            I have covered and am always learning:
             <strong>HTML5</strong>, <strong>CSS3</strong> and
-            <strong>JavaScript</strong>. I have built my projects using the
-            <strong>Vue</strong> framework so these are the skills I am most
-            proficient in. <br />I am always learning and refining my skills and
-            am excited to develop myself with each project I do and look forward
-            to growing my skills in web development.
+            <strong>JavaScript</strong>. I build most of my projects using the
+            <strong>Vue.js</strong> framework so these are the skills I am most
+            confident in. <br />I am always practicing and refining my skills
+            and am excited to develop my knowledge with each project I do and I
+            look forward to growing my skills in web development.
           </p>
         </div>
         <div>

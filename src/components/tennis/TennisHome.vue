@@ -18,11 +18,11 @@
 export default {
   data() {
     return {
-      navTabs: ["home", "forehand", "backhand", "serve", "volley"],
-      selectedNavTab: "forehand"
-    };
+      navTabs: ['home', 'forehand', 'backhand', 'serve', 'volley'],
+      selectedNavTab: 'forehand'
+    }
   }
-};
+}
 </script>
 
 <style lang="scss" scoped>

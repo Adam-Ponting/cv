@@ -296,9 +296,9 @@
 <script>
 export default {
   data() {
-    return {};
+    return {}
   }
-};
+}
 </script>
 
 <style lang="scss" scoped>
@@ -320,29 +320,29 @@ export default {
   height: 100vh;
 }
 .bgimg-1 {
-  background-image: url("https://firebasestorage.googleapis.com/v0/b/adp-cv.appspot.com/o/mongolia%2Fmongolia1.jpg?alt=media&token=d265d904-45a7-4ad7-9a1e-378d69070801");
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/adp-cv.appspot.com/o/mongolia%2Fmongolia1.jpg?alt=media&token=d265d904-45a7-4ad7-9a1e-378d69070801');
   min-height: 100%;
 }
 
 .bgimg-2 {
-  background-image: url("https://firebasestorage.googleapis.com/v0/b/adp-cv.appspot.com/o/mongolia%2Fmongolia2.jpg?alt=media&token=5ebfc845-f998-441b-b88a-c4af86d13599");
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/adp-cv.appspot.com/o/mongolia%2Fmongolia2.jpg?alt=media&token=5ebfc845-f998-441b-b88a-c4af86d13599');
   min-height: 400px;
 }
 
 .bgimg-3 {
-  background-image: url("https://firebasestorage.googleapis.com/v0/b/adp-cv.appspot.com/o/mongolia%2Fmongolia3.jpg?alt=media&token=5693978d-95ca-454f-a061-8fb0e0d8ed0a");
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/adp-cv.appspot.com/o/mongolia%2Fmongolia3.jpg?alt=media&token=5693978d-95ca-454f-a061-8fb0e0d8ed0a');
   min-height: 400px;
 }
 .bgimg-4 {
-  background-image: url("https://firebasestorage.googleapis.com/v0/b/adp-cv.appspot.com/o/mongolia%2Fmongolia4.jpg?alt=media&token=8c1aceff-855d-4997-8afe-b2ebced60287");
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/adp-cv.appspot.com/o/mongolia%2Fmongolia4.jpg?alt=media&token=8c1aceff-855d-4997-8afe-b2ebced60287');
   min-height: 400px;
 }
 .bgimg-5 {
-  background-image: url("https://firebasestorage.googleapis.com/v0/b/adp-cv.appspot.com/o/mongolia%2Fmongolia5.jpg?alt=media&token=386f406a-f02f-4ee3-8154-5276b394b954");
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/adp-cv.appspot.com/o/mongolia%2Fmongolia5.jpg?alt=media&token=386f406a-f02f-4ee3-8154-5276b394b954');
   min-height: 400px;
 }
 .bgimg-6 {
-  background-image: url("https://firebasestorage.googleapis.com/v0/b/adp-cv.appspot.com/o/mongolia%2Fmongolia6.jpg?alt=media&token=6d8b0368-419a-4cfd-b6d5-e10ebeab734b");
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/adp-cv.appspot.com/o/mongolia%2Fmongolia6.jpg?alt=media&token=6d8b0368-419a-4cfd-b6d5-e10ebeab734b');
   min-height: 400px;
 }
 

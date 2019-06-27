@@ -12,14 +12,14 @@
 </template>
 
 <script>
-import AppNav from "@/components/AppNav.vue";
-import AppFooter from "@/components/AppFooter.vue";
-import AppStory from "@/components/AppStory.vue";
-import AppSkills from "@/components/AppSkills.vue";
-import AppWorks from "@/components/AppWorks.vue";
-import AppSplash from "@/components/AppSplash.vue";
-import AppWelcome from "@/components/AppWelcome.vue";
-import SplashImage from "@/components/SplashImage.vue";
+import AppNav from '@/components/AppNav.vue'
+import AppFooter from '@/components/AppFooter.vue'
+import AppStory from '@/components/AppStory.vue'
+import AppSkills from '@/components/AppSkills.vue'
+import AppWorks from '@/components/AppWorks.vue'
+import AppSplash from '@/components/AppSplash.vue'
+import AppWelcome from '@/components/AppWelcome.vue'
+import SplashImage from '@/components/SplashImage.vue'
 export default {
   components: {
     AppNav,
@@ -31,5 +31,5 @@ export default {
     AppSkills,
     SplashImage
   }
-};
+}
 </script>

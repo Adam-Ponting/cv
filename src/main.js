@@ -1,14 +1,14 @@
-import Vue from "vue";
-import App from "./App.vue";
-import router from "./router";
-import store from "./store";
+import Vue from 'vue'
+import App from './App.vue'
+import router from './router'
+import store from './store'
 // import font awesome bits
-import { library } from "@fortawesome/fontawesome-svg-core";
+import { library } from '@fortawesome/fontawesome-svg-core'
 import {
   FontAwesomeIcon,
   FontAwesomeLayers,
   FontAwesomeLayersText
-} from "@fortawesome/vue-fontawesome";
+} from '@fortawesome/vue-fontawesome'
 // import fa icons
 import {
   faEnvelope,
@@ -26,7 +26,7 @@ import {
   faBars,
   faTimes,
   faClock
-} from "@fortawesome/free-solid-svg-icons";
+} from '@fortawesome/free-solid-svg-icons'
 import {
   faJs,
   faVuejs,
@@ -40,14 +40,14 @@ import {
   faFreeCodeCamp,
   faGoogle,
   faLinkedin
-} from "@fortawesome/free-brands-svg-icons";
+} from '@fortawesome/free-brands-svg-icons'
 // import swiper
-import VueAwesomeSwiper from "vue-awesome-swiper";
+import VueAwesomeSwiper from 'vue-awesome-swiper'
 
-import VeeValidate from "vee-validate";
+import VeeValidate from 'vee-validate'
 
 // import scss
-import "@/assets/css/app.scss";
+import '@/assets/css/app.scss'
 
 // add icons to fa library
 library.add(
@@ -78,19 +78,19 @@ library.add(
   faBars,
   faTimes,
   faClock
-);
+)
 // use font-awesome-icon for icons
-Vue.component("font-awesome-icon", FontAwesomeIcon);
-Vue.component("font-awesome-layers", FontAwesomeLayers);
-Vue.component("font-awesome-layers-text", FontAwesomeLayersText);
+Vue.component('font-awesome-icon', FontAwesomeIcon)
+Vue.component('font-awesome-layers', FontAwesomeLayers)
+Vue.component('font-awesome-layers-text', FontAwesomeLayersText)
 
-Vue.use(VueAwesomeSwiper /* { default global options } */);
-Vue.use(VeeValidate);
+Vue.use(VueAwesomeSwiper /* { default global options } */)
+Vue.use(VeeValidate)
 
-Vue.config.productionTip = false;
+Vue.config.productionTip = false
 
 new Vue({
   router,
   store,
   render: h => h(App)
-}).$mount("#app");
+}).$mount('#app')

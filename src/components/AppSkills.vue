@@ -6,10 +6,10 @@
         <p>
           I take great pride in my
           <strong>attention to detail</strong> and throughout my career as a
-          sports coach and bike mechanic have a logical approach to
+          have made use of my logical approach to
           <strong>problem solving</strong>. <br />I have considerable experience
           of working independently and in <strong>teams</strong>, including
-          management. This has involved managing complex ranges of tasks and
+          management. This has involved managing complex ranges of tasks,
           meeting <strong>deadlines</strong> and achieving
           <strong>targets</strong>. <br />I have the written and verbal
           <strong>communication</strong> skills required to articulate
@@ -59,10 +59,9 @@
           <h3>Cascading Style Sheets (CSS)</h3>
           <p>
             I have enjoyed learning CSS to
-            <strong>style</strong> and shape my sites.
-            <strong>Animations</strong> and <strong>transitions</strong> in
-            particular open up many options to engage the user and are an area
-            I'm keen to develop in
+            <strong>style</strong> and <strong>shape</strong> my sites. CSS
+            opens up many options to engage the user and is an area I'm actively
+            experimenting in.
           </p>
         </div>
       </div>
@@ -77,11 +76,9 @@
         <div class="skill-text">
           <h3>JavaScript</h3>
           <p>
-            JavaScript is continuing to grow in use and is where I focus my
-            continued learning and increased
+            JavaScript is where I focus my continued learning with increased
             <strong>efficiency</strong>. I use <strong>ES6</strong> code where
-            possible and am always practicing and learning new code, including
-            <strong>ES.Next</strong>
+            possible and am always practicing and learning new code.
           </p>
         </div>
       </div>
@@ -94,15 +91,14 @@
           class="fa-icon"
         />
         <div class="skill-text">
-          <h3>Vue</h3>
+          <h3>Vue.js</h3>
           <p>
-            I have been using and learning Vue alongside JavaScript and love its
+            I have been using and learning Vue alongside javaScript and love its
             simple syntax, great support and ease of use. All my projects are
             built in Vue and I use
             <strong>Vuex</strong> and <strong>Vue-router</strong> where needed.
-            While I am comfortable with the Vue framework I am keen to branch
-            into <strong>React</strong> and
-            <strong>Angular</strong>
+            I am comfortable with the Vue framework and look forward to the new
+            features expected in <strong>Vue 3.0</strong>
           </p>
         </div>
       </div>
@@ -138,7 +134,7 @@
           <p>
             I use SCSS to set and use
             <strong>variables</strong>, <strong>functions</strong>, and perform
-            <strong>arithmatic</strong> operations.
+            <strong>arithmatic</strong> operations. It makes my life easier!
           </p>
         </div>
       </div>
@@ -171,7 +167,8 @@
         <div class="skill-text">
           <h3>Google Firebase</h3>
           <p>
-            All of my sites are hosted on Google's Firebase servers, I use their
+            Most of my sites are hosted on Google's Firebase servers, I use
+            their
             <strong>hosting</strong>, <strong>authentication</strong>,
             <strong>database</strong> and <strong>storage</strong>. I have
             enjoyed learning how to interact with a database, including
@@ -192,7 +189,7 @@
         <div class="skill-text">
           <h3>Browser Developer tools</h3>
           <p>
-            I Chrome Developer Tools to test and fine tune my pages in the
+            I use Chrome Developer Tools to test and fine tune my pages in the
             browser itself, allowing me to see the changes live. I use the
             console to view and track any errors that
             <em>may</em> occur.
@@ -227,8 +224,8 @@
           <p>
             I use npm to maintain, share and publish my dependencies and
             projects and have experience using
-            <strong>axios</strong> and
-            <strong>Highcharts</strong>
+            <strong>axios</strong> and <strong>Highcharts</strong> along with
+            many other plugins.
           </p>
         </div>
       </div>
@@ -244,7 +241,7 @@
           <h3>Bootstrap</h3>
           <p>
             I have used Bootstrap to quickly design and build websites. I like
-            its vast library the speed I can
+            its vast library and speed I can
             <strong>prototype</strong> a website.
           </p>
         </div>
@@ -260,8 +257,8 @@
         <div class="skill-text">
           <h3>Moment.js</h3>
           <p>
-            I have used Moment to parse, validate, manipulate, and display dates
-            and times in JavaScript.
+            I have used Moment.js to parse, validate, manipulate, and display
+            dates and times in JavaScript.
           </p>
         </div>
       </div>
@@ -292,7 +289,8 @@
           <h3>freeCodeCamp</h3>
           <p>
             This has been one of my learning resources and I have completed
-            several of their courses and projects
+            several of their courses and projects and frequently use it to
+            refresh my memory.
           </p>
         </div>
       </div>

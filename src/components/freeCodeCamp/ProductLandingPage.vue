@@ -97,7 +97,9 @@
           <dl>
             <dt>Frame</dt>
 
-            <dd>- Frame &amp; forks wiped down and checked for alignment</dd>
+            <dd>
+              - Frame &amp; forks wiped down and checked for alignment
+            </dd>
             <dd>- Full safety check</dd>
 
             <dt>Wheels</dt>
@@ -130,11 +132,17 @@
             </dd>
             <dd>- Wheels trued and spokes tensioned</dd>
             <dt>Headset</dt>
-            <dd>- Checked for free movement and adjusted as necessary</dd>
+            <dd>
+              - Checked for free movement and adjusted as necessary
+            </dd>
             <dt>Bottom Bracket</dt>
-            <dd>- Checked for free movement and adjusted as necessary</dd>
+            <dd>
+              - Checked for free movement and adjusted as necessary
+            </dd>
             <dt>drive train</dt>
-            <dd>- Removed, cleaned, checked for wear and re-lubricated</dd>
+            <dd>
+              - Removed, cleaned, checked for wear and re-lubricated
+            </dd>
           </dl>
         </div>
 
@@ -153,7 +161,9 @@
 
           <dl>
             <dt>Wheels</dt>
-            <dd>- Hubs disassembled, cleaned, inspected and reassembled</dd>
+            <dd>
+              - Hubs disassembled, cleaned, inspected and reassembled
+            </dd>
             <dt>Headset</dt>
             <dd>
               - Removed, cleaned, regreased (if applicable), refitted &amp;
@@ -165,7 +175,9 @@
               checked for movement (replacement fitted if necessary)
             </dd>
             <dt>drive train</dt>
-            <dd>- Removed, cleaned, checked for wear and re-lubricated</dd>
+            <dd>
+              - Removed, cleaned, checked for wear and re-lubricated
+            </dd>
           </dl>
         </div>
 
@@ -181,13 +193,13 @@
 </template>
 
 <script>
-export default {};
+export default {}
 </script>
 
 <style lang="scss" scoped>
 #product-landing-page {
   background: white;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: black;
 }
 .grid-container-nav {
@@ -271,13 +283,13 @@ export default {};
 }
 .grid-container-items p {
   line-height: 1.5em;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   // background: rgba(0, 91, 84, 0);
   padding: 2em;
 }
 .grid-container-items h2 {
   line-height: 1.5em;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   // background: rgba(0, 91, 84, 0);
 }
 .grid-container-items p::first-letter {

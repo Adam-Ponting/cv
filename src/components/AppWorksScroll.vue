@@ -148,7 +148,7 @@
 </template>
 
 <script>
-import "swiper/dist/css/swiper.css";
+import 'swiper/dist/css/swiper.css'
 
 export default {
   components: {},
@@ -177,20 +177,20 @@ export default {
           enabled: true
         },
         pagination: {
-          el: ".swiper-pagination",
+          el: '.swiper-pagination',
           clickable: true
         },
         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev"
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
         }
       },
       swiperSlides: [
         {
           image:
-            "https://firebasestorage.googleapis.com/v0/b/adp-cv.appspot.com/o/worksScroll%2Frunlog.jpg?alt=media&token=df8d76b4-7c99-47dd-acb8-7846f1895848",
-          url: "https://adp-run-10k.firebaseapp.com/home",
-          title: "Hobby Project - Running Log",
+            'https://firebasestorage.googleapis.com/v0/b/adp-cv.appspot.com/o/worksScroll%2Frunlog.jpg?alt=media&token=df8d76b4-7c99-47dd-acb8-7846f1895848',
+          url: 'https://adp-run-10k.firebaseapp.com/home',
+          title: 'Hobby Project - Running Log',
           html5: true,
           css3: true,
           js: true,
@@ -211,11 +211,11 @@ export default {
         },
         {
           image:
-            "https://firebasestorage.googleapis.com/v0/b/adp-cv.appspot.com/o/worksScroll%2Ftribute.jpg?alt=media&token=b171961b-bddd-44d7-9327-60192018ee19",
-          link: "tribute",
-          title: "Responsive Web Design - Tribute Page",
+            'https://firebasestorage.googleapis.com/v0/b/adp-cv.appspot.com/o/worksScroll%2Ftribute.jpg?alt=media&token=b171961b-bddd-44d7-9327-60192018ee19',
+          link: 'tribute',
+          title: 'Responsive Web Design - Tribute Page',
           description:
-            "A freeCodeCamp Project Showcasing <strong>HTML</strong> and <strong>CSS</strong> skills in respect to structure, layout and responsive design",
+            'A freeCodeCamp Project Showcasing <strong>HTML</strong> and <strong>CSS</strong> skills in respect to structure, layout and responsive design',
           html5: true,
           css3: true,
           js: false,
@@ -234,11 +234,11 @@ export default {
         },
         {
           image:
-            "https://firebasestorage.googleapis.com/v0/b/adp-cv.appspot.com/o/worksScroll%2Fproduct.jpg?alt=media&token=7bc7dd8a-cc8f-4aa7-8736-c915adac2a2c",
-          link: "product",
-          title: "Responsive Web Design - Product Landing Page",
+            'https://firebasestorage.googleapis.com/v0/b/adp-cv.appspot.com/o/worksScroll%2Fproduct.jpg?alt=media&token=7bc7dd8a-cc8f-4aa7-8736-c915adac2a2c',
+          link: 'product',
+          title: 'Responsive Web Design - Product Landing Page',
           description:
-            "A freeCodeCamp Project Showcasing <strong>CSS Grid</strong> including embedding videos and a responsive design",
+            'A freeCodeCamp Project Showcasing <strong>CSS Grid</strong> including embedding videos and a responsive design',
           html5: true,
           css3: true,
           js: false,
@@ -257,11 +257,11 @@ export default {
         },
         {
           image:
-            "https://firebasestorage.googleapis.com/v0/b/adp-cv.appspot.com/o/worksScroll%2Fbike-survey.jpg?alt=media&token=4d983a18-61dd-4530-850a-fc80521e7487",
-          url: "https://rwd-survey-form.netlify.com/",
-          title: "Responsive Web Design - Survey Form",
+            'https://firebasestorage.googleapis.com/v0/b/adp-cv.appspot.com/o/worksScroll%2Fbike-survey.jpg?alt=media&token=4d983a18-61dd-4530-850a-fc80521e7487',
+          url: 'https://rwd-survey-form.netlify.com/',
+          title: 'Responsive Web Design - Survey Form',
           description:
-            "A responsive form that captures user input using <strong>CSS Flexbox</strong> and <strong>javaScript</strong> in <strong>Vue.js</strong>",
+            'A freeCodeCAmp responsive form that captures user input using <strong>CSS Flexbox</strong> and <strong>javaScript</strong> in <strong>Vue.js</strong>',
           html5: true,
           css3: true,
           js: true,
@@ -327,18 +327,18 @@ export default {
         }
  */
       ]
-    };
+    }
   },
   methods: {
     routerPush(link, url) {
       if (link) {
-        this.$router.push({ name: link });
+        this.$router.push({ name: link })
       } else if (url) {
-        window.open(url, "_blank");
+        window.open(url, '_blank')
       }
     }
   }
-};
+}
 </script>
 
 <style lang="scss" scoped></style>
