@@ -28,7 +28,7 @@
           <p>
             I have covered and am always learning:
             <strong>HTML5</strong>, <strong>CSS3</strong> and
-            <strong>JavaScript</strong>. I build most of my projects using the
+            <strong>javaScript</strong>. I build most of my projects using the
             <strong>Vue.js</strong> framework so these are the skills I am most
             confident in. <br />I am always practicing and refining my skills
             and am excited to develop my knowledge with each project I do and I
