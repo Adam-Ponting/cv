@@ -105,3 +105,106 @@ export default {
   }
 }
 </script>
+<style lang="scss" scoped>
+@import '@/assets/css/colors.scss'; // imports variable to this component
+
+.nav {
+  display: flex;
+  background: $lighter;
+  position: fixed; // move to top
+  top: 0;
+  width: 100%; // fill width
+}
+.nav__desktop {
+  display: flex;
+  justify-content: space-around;
+  width: 100%; // fill width
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.nav__logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.nav__logo--desktop {
+  height: 64px; // img height
+}
+.nav__logo--mobile {
+  height: 48px;
+}
+.nav__link {
+  font-weight: bold;
+  padding: 0.5rem;
+  color: $pink;
+  display: flex;
+  justify-content: center;
+}
+.nav__link--desktop {
+  flex-direction: column;
+  font-size: 1.5rem;
+  margin: 5px 0;
+
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid transparent;
+  transition: border-bottom 0.5s;
+  &:hover {
+    border-bottom: 3px solid $pink;
+  }
+}
+.nav__link--mobile {
+  flex-direction: row;
+  font-size: 1rem;
+  margin: 0.1rem 0;
+
+  background: $light;
+}
+.nav__mobile {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .nav__toggler {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid white;
+    text-align: right;
+    font-weight: bold;
+    padding: 0.5rem;
+    color: $pink;
+  }
+  .nav__desktop {
+    display: none;
+  }
+  .nav__mobile {
+    display: flex;
+    padding: 0 1rem;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .nav__mobile-links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: white;
+    width: 100%;
+  }
+  .mobile-menu-enter-active {
+    transition: all 0.5s ease;
+  }
+  .mobile-menu-leave-active {
+    transition: all 0.55s ease;
+  }
+  .mobile-menu-enter {
+    transform: translateX(-100px);
+    opacity: 0;
+    background: $pink;
+  }
+  .mobile-menu-leave-to {
+    transform: translateX(100px);
+    opacity: 0;
+    background: $pink;
+  }
+}
+</style>
