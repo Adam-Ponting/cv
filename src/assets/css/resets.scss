@@ -1,0 +1,35 @@
+// resets
+body {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+  transition: 0.25s;
+  &:focus {
+    outline: none;
+  }
+}
+// fonts
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}

@@ -1,6 +1,8 @@
 <template>
   <div>
-    <app-nav />
+    <!--     <app-nav />
+    -->
+    <nav-bar />
     <app-splash />
     <app-welcome />
     <app-story />
@@ -12,7 +14,9 @@
 </template>
 
 <script>
-import AppNav from '@/components/AppNav.vue'
+//import AppNav from '@/components/AppNav.vue'
+import NavBar from '@/components/NavBar.vue'
+
 import AppFooter from '@/components/AppFooter.vue'
 import AppStory from '@/components/AppStory.vue'
 import AppSkills from '@/components/AppSkills.vue'
@@ -22,7 +26,8 @@ import AppWelcome from '@/components/AppWelcome.vue'
 import SplashImage from '@/components/SplashImage.vue'
 export default {
   components: {
-    AppNav,
+    //AppNav,
+    NavBar,
     AppFooter,
     AppStory,
     AppWorks,
