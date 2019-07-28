@@ -154,8 +154,6 @@ export default {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border: 2px solid white;
-    text-align: right;
     font-weight: bold;
     padding: 0.5rem;
     color: $pink;
