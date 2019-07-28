@@ -19,7 +19,7 @@
       <a href="#" class="nav__logo-anchor">
         <img :src="this.$options.logo" alt="AP logo" class="nav__logo-image" />
       </a>
-      <a href="#" class="nav__toggler" @click="toggleMenu">
+      <a class="nav__toggler" @click="toggleMenu">
         {{ menu }}
         <font-awesome-icon :icon="icon" class="font-awesome-icon" />
       </a>
@@ -101,6 +101,7 @@ export default {
   position: fixed; // move to top
   top: 0;
   width: 100%; // fill width
+  z-index: 2;
 }
 .nav__desktop {
   display: flex;
