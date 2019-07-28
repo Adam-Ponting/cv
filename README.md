@@ -1,2 +1,2 @@
 # cv
-https://adp-cv.firebaseapp.com/
+https://adp-cv.web.app/
