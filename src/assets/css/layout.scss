@@ -1,115 +1,3 @@
-// nav-bar
-#nav-bar {
-  background: $bg-lighter;
-  position: fixed;
-  width: 100%;
-  min-height: 64px;
-  top: 0px;
-  border-bottom: 1px solid black;
-  z-index: 2;
-  .nav-lg {
-    display: none; // hides nav > 1000px
-  }
-  > ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
-    font-weight: bold;
-    > a {
-      flex: 1 1 100px;
-      img {
-        height: 46px;
-      }
-    }
-    li {
-      flex: 1 1 200px;
-      padding: 1rem;
-    }
-    li a {
-      color: $bg-pink;
-      border-bottom: 3px solid transparent;
-      transition: border-bottom 0.5s;
-      padding: 0.3rem;
-      font-size: 1.3rem;
-      line-height: 2rem;
-      &:hover {
-        border-bottom: 3px solid $bg-pink;
-      }
-    }
-  }
-  .nav-sm {
-    display: none; // hides nav > 1000px
-  }
-  .navbar-menu {
-    color: $bg-pink;
-    > div {
-      height: 64px;
-      padding: 0 2rem;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      .burger {
-        flex: 0 1 100px;
-        text-align: center;
-        padding: 0.3rem;
-        font-size: 1.3rem;
-        line-height: 2rem;
-        cursor: pointer;
-        color: $bg-pink;
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-    }
-    ul {
-      li {
-        a {
-          background: $bg-light;
-          text-align: center;
-          display: inline-block;
-          margin-bottom: 1px;
-          width: 100%;
-          padding: 0.3rem;
-          font-size: 1.3rem;
-          line-height: 2rem;
-          &:hover {
-            text-decoration: underline;
-          }
-        }
-      }
-    }
-  }
-}
-
-// splash image
-#splash.splash-wrapper {
-  margin-top: 64px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: url("https://firebasestorage.googleapis.com/v0/b/adp-cv.appspot.com/o/home%2Fsunset.jpg?alt=media&token=999208b6-d3c1-40a5-939b-5ba9478581fb")
-    no-repeat center;
-  background-size: cover;
-  height: 50vh;
-  h1 {
-    text-transform: capitalize;
-    font-variant: small-caps;
-    font-size: 3em;
-    letter-spacing: 0.2em;
-    text-align: center;
-    padding: 0 2rem;
-    color: $secondary;
-    cursor: default;
-  }
-}
-
 // welcome text
 #welcome {
   background: $bg-light;
@@ -132,7 +20,7 @@
       letter-spacing: 0.2rem;
       color: $alt;
       &:before {
-        content: "-";
+        content: '-';
       }
     }
     > p {
@@ -203,7 +91,7 @@
   min-height: fit-content;
   .pic {
     flex: 1 1 500px;
-    background: url("../../assets/adam4.jpg") no-repeat center;
+    background: url('../../assets/adam4.jpg') no-repeat center;
     background-size: cover;
     width: 100%;
     min-height: 300px;
@@ -225,7 +113,7 @@
       letter-spacing: 0.2rem;
       color: $alt;
       &:before {
-        content: "-";
+        content: '-';
       }
     }
     p {
@@ -267,7 +155,7 @@
         letter-spacing: 0.2rem;
         color: $alt;
         &:before {
-          content: "-";
+          content: '-';
         }
       }
       > p {
@@ -324,7 +212,7 @@
 
 //splash image adam cliveden
 .splash-wrapper {
-  background: url("https://firebasestorage.googleapis.com/v0/b/adp-cv.appspot.com/o/home%2Fsunset2.jpg?alt=media&token=fd02ff31-a3aa-4f42-866f-aba0d5d1188a")
+  background: url('https://firebasestorage.googleapis.com/v0/b/adp-cv.appspot.com/o/home%2Fsunset2.jpg?alt=media&token=fd02ff31-a3aa-4f42-866f-aba0d5d1188a')
     no-repeat center;
   background-size: cover;
   background-attachment: scroll;
@@ -358,21 +246,20 @@
       letter-spacing: 0.2rem;
       color: $alt;
       &:before {
-        content: "-";
+        content: '-';
       }
     }
     p {
       flex: 1 1 800px;
       padding-left: 1rem;
       text-align: center;
-      a{
+      a {
         color: $bg-pink;
         text-decoration: underline;
         text-decoration-color: transparent;
         &:hover {
           text-decoration: underline;
         }
-    
       }
     }
   }
@@ -411,14 +298,13 @@
       text-decoration: underline;
       text-decoration-color: transparent;
       &:hover {
-        text-decoration: underline
+        text-decoration: underline;
       }
     }
     h5 {
       color: $alt;
       text-transform: capitalize;
       font-variant: small-caps;
-  
     }
     p {
       padding-top: 1.5rem;
