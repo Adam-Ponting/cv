@@ -19,7 +19,7 @@
       <a href="#" class="nav__logo-anchor">
         <img :src="this.$options.logo" alt="AP logo" class="nav__logo-image" />
       </a>
-      <a href="#" class="nav__toggler" @click="toggleMenu">
+      <a class="nav__toggler" @click="toggleMenu">
         {{ menu }}
         <font-awesome-icon :icon="icon" class="font-awesome-icon" />
       </a>
@@ -97,10 +97,11 @@ export default {
 
 .nav {
   display: flex;
-  background: $lighter;
+  background: $bg-light;
   position: fixed; // move to top
   top: 0;
   width: 100%; // fill width
+  z-index: 2;
 }
 .nav__desktop {
   display: flex;
@@ -119,7 +120,7 @@ export default {
 .nav__link {
   font-weight: bold;
   padding: 0.5rem;
-  color: $pink;
+  color: $interact;
   display: flex;
   justify-content: center;
 }
@@ -132,7 +133,7 @@ export default {
   border-top: 3px solid transparent;
   transition: border-bottom 0.5s;
   &:hover {
-    border-bottom: 3px solid $pink;
+    border-bottom: 3px solid $interact;
   }
 }
 .nav__mobile {
@@ -156,7 +157,7 @@ export default {
     align-items: center;
     font-weight: bold;
     padding: 0.5rem;
-    color: $pink;
+    color: $interact;
   }
   .font-awesome-icon {
     margin-left: 10px;
@@ -170,12 +171,12 @@ export default {
   .mobile-menu-enter {
     transform: translateX(-100px);
     opacity: 0;
-    background: $pink;
+    background: $interact;
   }
   .mobile-menu-leave-to {
     transform: translateX(100px);
     opacity: 0;
-    background: $pink;
+    background: $interact;
   }
   .nav__mobile-links {
     display: flex;
