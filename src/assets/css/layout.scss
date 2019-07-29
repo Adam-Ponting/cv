@@ -47,54 +47,8 @@
   }
 }
 
-// works
-#works {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: stretch;
-  max-width: 1200px;
-  margin: 0 auto;
-  background: $bg-lighter;
-  .my-work {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 2rem;
-    color: $primary;
-    h2 {
-      flex: 1 1 200px;
-      text-transform: capitalize;
-      font-variant: small-caps;
-      font-weight: bold;
-      font-size: 3rem;
-      letter-spacing: 0.2rem;
-      color: $alt;
-      &:before {
-        content: '-';
-      }
-    }
-    p {
-      flex: 1 1 800px;
-      padding-left: 1rem;
-      text-align: center;
-      a {
-        color: $bg-pink;
-        text-decoration: underline;
-        text-decoration-color: transparent;
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-    }
-  }
-}
-
 // scroll-wrapper
 #scroll-wrapper {
-  max-width: 1200px;
   padding: 0 2rem;
   .frame {
     padding: 2rem 2.5rem;

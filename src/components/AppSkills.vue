@@ -1,35 +1,33 @@
 <template>
-  <div>
-    <section class="skills">
-      <article>
-        <heading-intro>
-          <template v-slot:heading>
-            <h1 class="slot-heading">my skills</h1>
-          </template>
-          <template v-slot:intro>
-            <p class="slot-intro">
-              I take great pride in my
-              <strong>attention to detail</strong> and throughout my career as a
-              have made use of my logical approach to
-              <strong>problem solving</strong>. <br />I have considerable
-              experience of working independently and in <strong>teams</strong>,
-              including management. This has involved managing complex ranges of
-              tasks, meeting <strong>deadlines</strong> and achieving
-              <strong>targets</strong>. <br />I have the written and verbal
-              <strong>communication</strong> skills required to articulate
-              effectively and the <strong>determination</strong> and drive to
-              succeed in web development.
-            </p>
-          </template>
-        </heading-intro>
-      </article>
-      <skill-item
-        v-for="skill in this.$options.skills"
-        :skill="skill"
-        :key="skill.name"
-      />
-    </section>
-  </div>
+  <section class="skills" id="skills">
+    <article>
+      <heading-intro>
+        <template v-slot:heading>
+          <h1 class="slot-heading">my skills</h1>
+        </template>
+        <template v-slot:intro>
+          <p class="slot-intro">
+            I take great pride in my
+            <strong>attention to detail</strong> and throughout my career as a
+            have made use of my logical approach to
+            <strong>problem solving</strong>. <br />I have considerable
+            experience of working independently and in <strong>teams</strong>,
+            including management. This has involved managing complex ranges of
+            tasks, meeting <strong>deadlines</strong> and achieving
+            <strong>targets</strong>. <br />I have the written and verbal
+            <strong>communication</strong> skills required to articulate
+            effectively and the <strong>determination</strong> and drive to
+            succeed in web development.
+          </p>
+        </template>
+      </heading-intro>
+    </article>
+    <skill-item
+      v-for="skill in this.$options.skills"
+      :skill="skill"
+      :key="skill.name"
+    />
+  </section>
 </template>
 
 <script>
