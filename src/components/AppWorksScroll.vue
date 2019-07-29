@@ -391,7 +391,6 @@ export default {
   padding: 2rem 2.5rem;
   text-align: center;
   height: 100%;
-  min-height: 550px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
