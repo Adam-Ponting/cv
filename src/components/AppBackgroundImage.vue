@@ -1,13 +1,27 @@
 <template>
-  <div class="splash-image">
+  <div class="splash-image" :style="styleObject">
     <span class="splash-image__content">
-      <slot name="splashContent"></slot>
+      <slot name="content"></slot>
     </span>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    image: {
+      type: String,
+      required: false
+    }
+  },
+  data() {
+    return {
+      styleObject: {
+        'background-image': `url(' ${this.image} ')`
+      }
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -20,8 +34,7 @@ export default {}
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url('https://firebasestorage.googleapis.com/v0/b/adp-cv.appspot.com/o/home%2Fsunset.jpg?alt=media&token=999208b6-d3c1-40a5-939b-5ba9478581fb')
-    no-repeat center;
+  background: no-repeat center;
   background-size: cover;
   height: 50vh;
 }

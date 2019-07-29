@@ -102,6 +102,7 @@ export default {
   top: 0;
   width: 100%; // fill width
   z-index: 2;
+  border-bottom: 1px solid black;
 }
 .nav__desktop {
   display: flex;

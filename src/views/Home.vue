@@ -1,42 +1,41 @@
 <template>
   <div>
     <nav-bar />
-    <app-background-image>
-      <template v-slot:splashContent>
+    <app-background-image :image="this.$options.bg1">
+      <template v-slot:content>
         <span>Adam Ponting</span>
       </template>
     </app-background-image>
-    <!--     <app-splash />
-    -->
     <app-welcome />
     <app-story />
     <app-skills />
-    <splash-image />
+    <app-background-image :image="this.$options.bg2"></app-background-image>
     <app-works />
-    <app-footer />
+    <footer-content />
   </div>
 </template>
 
 <script>
 import NavBar from '@/components/NavBar.vue'
 import AppBackgroundImage from '@/components/AppBackgroundImage.vue'
-
-import AppFooter from '@/components/AppFooter.vue'
+import FooterContent from '@/components/FooterContent.vue'
 import AppStory from '@/components/AppStory.vue'
 import AppSkills from '@/components/AppSkills.vue'
 import AppWorks from '@/components/AppWorks.vue'
 import AppWelcome from '@/components/AppWelcome.vue'
-import SplashImage from '@/components/SplashImage.vue'
 export default {
   components: {
     NavBar,
     AppBackgroundImage,
-    AppFooter,
+    FooterContent,
     AppStory,
     AppWorks,
     AppWelcome,
-    AppSkills,
-    SplashImage
-  }
+    AppSkills
+  },
+  bg1:
+    'https://firebasestorage.googleapis.com/v0/b/adp-cv.appspot.com/o/home%2Fsunset.jpg?alt=media&token=999208b6-d3c1-40a5-939b-5ba9478581fb',
+  bg2:
+    'https://firebasestorage.googleapis.com/v0/b/adp-cv.appspot.com/o/home%2Fsunset2.jpg?alt=media&token=fd02ff31-a3aa-4f42-866f-aba0d5d1188a'
 }
 </script>
