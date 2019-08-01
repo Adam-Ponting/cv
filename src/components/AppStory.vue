@@ -54,7 +54,7 @@ export default {
 .slot-intro {
   display: inline;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
   .story {
     display: block;
   }

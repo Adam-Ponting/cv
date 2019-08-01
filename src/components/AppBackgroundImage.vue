@@ -29,7 +29,7 @@ export default {
 
 // splash image
 .splash-image {
-  margin-top: 64px;
+  //margin-top: 64px;
   display: flex;
   flex-direction: column;
   justify-content: center;
