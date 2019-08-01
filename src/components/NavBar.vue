@@ -106,7 +106,8 @@ export default {
 }
 .nav__desktop {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 1rem;
   width: 100%; // fill width
   max-width: 1200px;
   margin: 0 auto;
