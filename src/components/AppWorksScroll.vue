@@ -211,14 +211,16 @@ export default {
         {
           image:
             'https://firebasestorage.googleapis.com/v0/b/adp-cv.appspot.com/o/worksScroll%2Ftribute.jpg?alt=media&token=b171961b-bddd-44d7-9327-60192018ee19',
-          link: 'tribute',
+          url: 'https://adp-fcc.netlify.com/tribute',
+
+          // link: 'tribute', // chanegd to url
           title: 'Responsive Web Design - Tribute Page',
           description:
             'A freeCodeCamp project showcasing <strong>HTML</strong> and <strong>CSS</strong> skills in respect to structure, layout and responsive design.',
           html5: true,
           css3: true,
           js: false,
-          vuejs: false,
+          vuejs: true,
           responsive: true,
           sass: true,
           github: true,
@@ -234,6 +236,7 @@ export default {
         {
           image:
             'https://firebasestorage.googleapis.com/v0/b/adp-cv.appspot.com/o/worksScroll%2Fproduct.jpg?alt=media&token=7bc7dd8a-cc8f-4aa7-8736-c915adac2a2c',
+
           link: 'product',
           title: 'Responsive Web Design - Product Landing Page',
           description:
@@ -257,7 +260,7 @@ export default {
         {
           image:
             'https://firebasestorage.googleapis.com/v0/b/adp-cv.appspot.com/o/worksScroll%2Fbike-survey.jpg?alt=media&token=4d983a18-61dd-4530-850a-fc80521e7487',
-          url: 'https://rwd-survey-form.netlify.com/',
+          url: 'https://adp-fcc.netlify.com/form',
           title: 'Responsive Web Design - Survey Form',
           description:
             'A freeCodeCamp project with a responsive form that captures user input using <strong>CSS Flexbox</strong> and <strong>javaScript</strong> in <strong>Vue.js</strong>.',
