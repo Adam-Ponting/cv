@@ -1,36 +1,28 @@
 <template>
   <div>
-    <nav-bar />
     <app-background-image :image="this.$options.bg1">
       <template v-slot:content>
         <span>Adam Ponting</span>
       </template>
     </app-background-image>
     <app-welcome />
-
     <app-story />
     <app-background-image :image="this.$options.bg3"></app-background-image>
-
     <app-skills />
     <app-background-image :image="this.$options.bg2"></app-background-image>
     <app-works />
-    <footer-content />
   </div>
 </template>
 
 <script>
-import NavBar from '@/components/NavBar.vue'
 import AppBackgroundImage from '@/components/AppBackgroundImage.vue'
-import FooterContent from '@/components/FooterContent.vue'
 import AppStory from '@/components/AppStory.vue'
 import AppSkills from '@/components/AppSkills.vue'
 import AppWorks from '@/components/AppWorks.vue'
 import AppWelcome from '@/components/AppWelcome.vue'
 export default {
   components: {
-    NavBar,
     AppBackgroundImage,
-    FooterContent,
     AppStory,
     AppWorks,
     AppWelcome,
