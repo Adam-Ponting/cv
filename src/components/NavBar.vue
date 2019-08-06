@@ -3,10 +3,10 @@
     <!-- start desktop -->
     <nav class="nav__desktop">
       <a href="#" class="nav__logo-anchor">
-        <img :src="this.$options.logo" alt="AP logo" class="nav__logo-image" />
+        <img :src="$options.logo" alt="AP logo" class="nav__logo-image" />
       </a>
       <a
-        v-for="link in this.$options.links"
+        v-for="link in $options.links"
         :key="link.name"
         :href="link.href"
         class="nav__link nav__link--desktop"
@@ -17,7 +17,7 @@
     <!-- start mobile -->
     <div class="nav__mobile">
       <a href="#" class="nav__logo-anchor">
-        <img :src="this.$options.logo" alt="AP logo" class="nav__logo-image" />
+        <img :src="$options.logo" alt="AP logo" class="nav__logo-image" />
       </a>
       <a class="nav__toggler" @click="toggleMenu">
         {{ menu }}
@@ -26,7 +26,7 @@
       <transition name="mobile-menu">
         <div class="nav__mobile-links" v-show="navMenuOpen">
           <a
-            v-for="link in this.$options.links"
+            v-for="link in $options.links"
             :key="link.name"
             :href="link.href"
             class="nav__link nav__link--mobile"
