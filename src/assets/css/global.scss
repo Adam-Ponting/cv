@@ -17,6 +17,7 @@ body {
   margin: 0;
   color: $primary;
   background: #fdfdfd;
+  font-family: 'Open Sans', sans-serif;
 }
 
 html {
@@ -39,7 +40,7 @@ a {
 }
 
 * {
-  font-family: 'Open Sans', sans-serif;
+  // font-family: 'Open Sans', sans-serif;
   box-sizing: border-box;
   transition: 0.25s;
 

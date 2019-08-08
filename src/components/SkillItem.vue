@@ -34,7 +34,13 @@ export default {
 @import '@/assets/css/colors.scss'; // imports variable to this component
 
 .skill-item {
-  margin-top: 1rem;
+  margin: 2rem 1rem;
+  padding: 1rem;
+  box-shadow: 1px 1px 5px 2px rgba(38, 59, 94, 0.2);
+  &:hover {
+    box-shadow: 1px 1px 10px 2px rgba(38, 59, 94, 0.5);
+    transform: scale(1.01);
+  }
 }
 .skill-item__icon {
   width: 64px;
@@ -42,6 +48,7 @@ export default {
   border: 5px solid rgba($alt, 0.2);
   border-radius: 10px;
   padding: 0.25rem;
+  align-self: flex-start;
 }
 .skill-item__details {
   display: flex;

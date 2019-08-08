@@ -1,7 +1,7 @@
 <template>
   <div class="splash-image" :style="styleObject">
     <span class="splash-image__content">
-      <slot name="content"></slot>
+      <slot name="content" class="test"></slot>
     </span>
   </div>
 </template>
@@ -26,10 +26,8 @@ export default {
 
 <style lang="scss" scoped>
 @import '@/assets/css/colors.scss'; // imports variable to this component
-
 // splash image
 .splash-image {
-  //margin-top: 64px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -44,6 +42,8 @@ export default {
   font-size: 5em;
   letter-spacing: 2px;
   font-weight: bold;
+  font-family: 'Georgia, serif';
+
   padding: 0 1rem;
   color: $font-light;
   cursor: default;
@@ -53,7 +53,8 @@ export default {
     height: 30vh;
   }
   .splash-image__content {
-    font-size: 2em;
+    font-size: 2.5em;
+    text-align: center;
   }
 }
 </style>

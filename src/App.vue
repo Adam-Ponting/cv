@@ -22,4 +22,7 @@ export default {
 .router-view {
   margin-top: 60px;
 }
+#app {
+  font-family: 'Open Sans', sans-serif;
+}
 </style>

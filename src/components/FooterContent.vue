@@ -34,7 +34,7 @@ export default {
   max-width: 1200px;
   margin: 0 auto;
 
-  font-size: 1.3rem;
+  font-size: 1rem;
   padding: 1rem;
 }
 .footer-link {
@@ -45,7 +45,7 @@ export default {
 }
 @media screen and (max-width: 800px) {
   .footer__details {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }
 </style>
