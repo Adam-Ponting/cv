@@ -53,21 +53,30 @@
           class="welcome-details__font-awesome-icon"
         />
         <h3 class="welcome-details__header">Contact me</h3>
-        <p class="welcome-details__paragraph">I can be contacted via email:</p>
-        <a href="mailto:adamponting@outlook.com" class="contact-me">
-          <font-awesome-icon
-            icon="envelope"
-            class="contact-me__font-awesome"
-          />adamponting@outlook.com
-        </a>
-        <br />
-        <p class="welcome-details__paragraph">View my GitHub:</p>
-        <a href="https://github.com/Mada75" target="_blank" class="contact-me">
-          <font-awesome-icon
-            :icon="['fab', 'github']"
-            class="contact-me__font-awesome"
-          />https://github.com/Mada75
-        </a>
+        <p class="welcome-details__paragraph">
+          I can be contacted via email:
+          <br />
+          <a href="mailto:adamponting@outlook.com" class="contact-me">
+            <font-awesome-icon
+              icon="envelope"
+              class="contact-me__font-awesome"
+            />adamponting@outlook.com
+          </a>
+        </p>
+        <p class="welcome-details__paragraph">
+          View my GitHub:
+          <br />
+          <a
+            href="https://github.com/Mada75"
+            target="_blank"
+            class="contact-me"
+          >
+            <font-awesome-icon
+              :icon="['fab', 'github']"
+              class="contact-me__font-awesome"
+            />https://github.com/Mada75
+          </a>
+        </p>
       </article>
     </section>
   </section>
@@ -85,8 +94,6 @@ export default {
 <style lang="scss" scoped>
 @import '@/assets/css/colors.scss'; // imports variable to this component
 .contact-me {
-  line-height: 1.5; // to make anchor same size as paragraph
-  font-size: 1.3rem; // to make anchor same size as paragraph
   color: $bg-pink;
   border-bottom: 1px solid transparent;
   transition: border-bottom 0.5s;
@@ -116,6 +123,14 @@ export default {
   align-items: center;
   text-align: center;
   padding: 0 0.5rem;
+  background: white;
+  border-radius: 10px;
+  margin: 1rem;
+  box-shadow: 1px 1px 5px 2px rgba(38, 59, 94, 0.2);
+  &:hover {
+    box-shadow: 1px 1px 10px 2px rgba(38, 59, 94, 0.5);
+    transform: scale(1.01);
+  }
 }
 .welcome-details__font-awesome-icon {
   color: $alt;
@@ -123,16 +138,28 @@ export default {
   border: 1rem solid rgba($alt, 0.2);
   border-radius: 50px;
   padding: 1rem;
+  margin: 2rem;
 }
 .welcome-details__header {
   font-size: 1.6rem;
+  color: $interact;
+}
+.welcome-details__paragraph {
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
 }
 @media screen and (max-width: 800px) {
   .welcome {
     padding: 2rem 1rem;
   }
+  .welcome-details__header {
+    font-size: 1.3rem;
+  }
+
   .welcome-details__paragraph {
     font-size: 1rem;
+    padding: 0.5rem;
   }
   .welcome-details__font-awesome-icon {
     color: $alt;
@@ -140,6 +167,7 @@ export default {
     border: 1rem solid rgba($alt, 0.2);
     border-radius: 40px;
     padding: 1rem;
+    margin: 1rem;
   }
   .contact-me {
     font-size: 1rem; // to make anchor same size as paragraph
