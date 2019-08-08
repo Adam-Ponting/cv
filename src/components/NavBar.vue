@@ -8,7 +8,7 @@
       <a
         v-for="link in links"
         :key="link.name"
-        href
+        :href="link.href"
         v-scroll-to="{ el: link.href }"
         class="nav__link nav__link--desktop"
         >{{ link.name }}</a
@@ -29,7 +29,7 @@
           <a
             v-for="link in links"
             :key="link.name"
-            href
+            :href="link.href"
             v-scroll-to="{ el: link.href }"
             class="nav__link nav__link--mobile"
             @click="toggleMenu"
