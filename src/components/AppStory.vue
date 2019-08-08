@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="section-bg">
     <section class="story" id="story">
       <img :src="this.$options.bg3" class="story__image" alt="Photo of Adam" />
 
@@ -40,7 +40,7 @@ export default {
 
 <style lang="scss" scoped>
 @import '@/assets/css/colors.scss'; // imports variable to this component
-.hello {
+.section-bg {
   width: 100%;
   background: $bg-dark;
 }
