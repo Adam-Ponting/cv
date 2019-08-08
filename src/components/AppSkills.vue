@@ -69,7 +69,7 @@ export default {
       color: '#41B883',
       header: 'Vue',
       text:
-        'I have been using and learning Vue alongside javaScript and love its simple syntax, great support and ease of use. All my projects are built in Vue and I use <strong>Vuex</strong> and <strong>Vue-router</strong> where needed. I am comfortable with the Vue framework and look forward to the new features expected in <strong>Vue 3.0</strong>'
+        'I have been using and learning Vue alongside javaScript and love its simple syntax, great support and ease of use. All my projects are built in Vue and I use <strong>Vuex</strong> and <strong>Vue-router</strong> where needed. I am comfortable with the Vue framework and look forward to the new features expected in <strong>Vue 3.0</strong>.'
     },
     {
       name: 'Responsive Design',
@@ -77,7 +77,7 @@ export default {
       color: '#472ada',
       header: 'Responsive Design',
       text:
-        'With the changing ways we view and interact with screens I design each website to the latest standards to be responsive and ensure the user gets the best experience. I have used a combination of <strong>Flexbox</strong>, <strong>CSS Grid</strong> and CSS frameworks such as <strong>Bootstrap</strong> to design my portfolio'
+        'With the changing ways we view and interact with screens I design each website to the latest standards to be responsive and ensure the user gets the best experience. I have used a combination of <strong>Flexbox</strong>, <strong>CSS Grid</strong> and CSS frameworks such as <strong>Bootstrap</strong> to design my portfolio.'
     },
     {
       name: 'SCSS',
