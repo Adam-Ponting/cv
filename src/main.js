@@ -87,6 +87,21 @@ Vue.component('font-awesome-layers-text', FontAwesomeLayersText)
 Vue.use(VueAwesomeSwiper /* { default global options } */)
 Vue.use(VeeValidate)
 
+const VueScrollTo = require('vue-scrollto') // https://vue-scrollto.netlify.com/
+Vue.use(VueScrollTo, {
+  container: 'body',
+  duration: 1000,
+  easing: 'ease',
+  offset: -60,
+  force: true,
+  cancelable: true,
+  onStart: false,
+  onDone: false,
+  onCancel: false,
+  x: false,
+  y: true
+})
+
 Vue.config.productionTip = false
 
 new Vue({

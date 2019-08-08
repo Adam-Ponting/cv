@@ -10,7 +10,7 @@
       is licensed
       <a :href="this.$options.licence" target="_blank">CC BY NC SA 4.0.</a>
       <br />
-      <a href="#">Return to top</a>
+      <a v-scroll-to="'#home'" class="footer-link">Return to top</a>
     </p>
   </footer>
 </template>
@@ -37,7 +37,7 @@ export default {
   font-size: 1.3rem;
   padding: 1rem;
 }
-a {
+.footer-link {
   color: $interact;
   &:hover {
     text-decoration: underline;

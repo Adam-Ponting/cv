@@ -7,10 +7,6 @@ import Error404 from './components/Error404.vue'
 Vue.use(Router)
 
 export default new Router({
-  // scroll to top on new link
-  scrollBehavior() {
-    return { x: 0, y: 0 }
-  },
   mode: 'history',
   base: process.env.BASE_URL,
   routes: [
@@ -36,5 +32,15 @@ export default new Router({
       path: '*',
       redirect: '/404'
     }
-  ]
+  ],
+  /* https://dev.to/napoleon039/the-lesser-known-amazing-things-vuerouter-can-do-25di */
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition
+    }
+    if (to.hash) {
+      return { selector: to.hash }
+    }
+    return { x: 0, y: 0 }
+  }
 })

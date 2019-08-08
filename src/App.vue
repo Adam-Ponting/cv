@@ -20,6 +20,6 @@ export default {
 
 <style lang="scss" scoped>
 .router-view {
-  margin-top: 65px;
+  margin-top: 60px;
 }
 </style>

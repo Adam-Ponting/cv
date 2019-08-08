@@ -1,14 +1,15 @@
 <template>
-  <div class="nav">
+  <div class="nav" id="home">
     <!-- start desktop -->
     <nav class="nav__desktop">
-      <a href="#" class="nav__logo-anchor">
-        <img :src="$options.logo" alt="AP logo" class="nav__logo-image" />
+      <a href v-scroll-to="'#home'" class="nav__logo-anchor">
+        <img :src="logo" alt="AP logo" class="nav__logo-image" />
       </a>
       <a
-        v-for="link in $options.links"
+        v-for="link in links"
         :key="link.name"
-        :href="link.href"
+        href
+        v-scroll-to="{ el: link.href }"
         class="nav__link nav__link--desktop"
         >{{ link.name }}</a
       >
@@ -16,8 +17,8 @@
     <!-- end desktop -->
     <!-- start mobile -->
     <div class="nav__mobile">
-      <a href="#" class="nav__logo-anchor">
-        <img :src="$options.logo" alt="AP logo" class="nav__logo-image" />
+      <a href v-scroll-to="'#home'" class="nav__logo-anchor">
+        <img :src="logo" alt="AP logo" class="nav__logo-image" />
       </a>
       <a class="nav__toggler" @click="toggleMenu">
         {{ menu }}
@@ -26,9 +27,10 @@
       <transition name="mobile-menu">
         <div class="nav__mobile-links" v-show="navMenuOpen">
           <a
-            v-for="link in $options.links"
+            v-for="link in links"
             :key="link.name"
-            :href="link.href"
+            href
+            v-scroll-to="{ el: link.href }"
             class="nav__link nav__link--mobile"
             @click="toggleMenu"
             >{{ link.name }}</a
@@ -45,15 +47,6 @@ export default {
   // non-reactive data
   // https://github.com/vuejs/vue/issues/1988
   // https://itnext.io/how-not-to-vue-18f16fe620b5
-  logo:
-    'https://firebasestorage.googleapis.com/v0/b/adp-cv.appspot.com/o/base%2Fadam-logo.jpg?alt=media&token=2aa71b01-e382-4c1e-b29f-184a44b73e3a',
-
-  links: [
-    { name: 'Welcome', href: '#' },
-    { name: 'MyStory', href: '#story' },
-    { name: 'MySkills', href: '#skills' },
-    { name: 'MyWorks', href: '#works' }
-  ],
   data() {
     return {
       navMenuOpen: false,
@@ -61,20 +54,16 @@ export default {
       icon: 'bars'
     }
   },
-  mounted() {
-    /* https://stackoverflow.com/questions/17534661/make-anchor-link-go-some-pixels-above-where-its-linked-to */
-    // The function actually applying the offset
-    function offsetAnchor() {
-      if (location.hash.length !== 0) {
-        window.scrollTo(window.scrollX, window.scrollY - 64)
-      }
-    }
-    // This will capture hash changes while on the page
-    window.addEventListener('hashchange', offsetAnchor)
-    // This is here so that when you enter the page with a hash,
-    // it can provide the offset in that case too. Having a timeout
-    // seems necessary to allow the browser to jump to the anchor first.
-    window.setTimeout(offsetAnchor, 0.1) // The delay of 1 is arbitrary and may not always work right (although it did in my testing).
+  created() {
+    this.logo =
+      'https://firebasestorage.googleapis.com/v0/b/adp-cv.appspot.com/o/base%2Fadam-logo.jpg?alt=media&token=2aa71b01-e382-4c1e-b29f-184a44b73e3a'
+    this.links = [
+      { name: 'Home', href: '#home' },
+      { name: 'Welcome', href: '#welcome' },
+      { name: 'MyStory', href: '#story' },
+      { name: 'MySkills', href: '#skills' },
+      { name: 'MyWorks', href: '#works' }
+    ]
   },
   methods: {
     toggleMenu() {
@@ -101,24 +90,27 @@ export default {
   position: fixed; // move to top
   top: 0;
   width: 100%; // fill width
+  height: 60px;
   z-index: 2;
   border-bottom: 1px solid black;
 }
 .nav__desktop {
   display: flex;
-  justify-content: space-between;
   padding: 0 1rem;
   width: 100%; // fill width
   max-width: 1200px;
   margin: 0 auto;
 }
-.nav__logo-anchor,
-.nav__logo-image {
+.nav__logo-anchor {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 64px;
+  margin-right: auto;
+  align-self: center;
 }
+.nav__logo-image {
+  height: 48px;
+  margin: 6px 0; // holds image in place on menu toggle opening (=60px height)
+}
+
 .nav__link {
   font-weight: bold;
   padding: 0.5rem;
@@ -128,8 +120,8 @@ export default {
 }
 .nav__link--desktop {
   flex-direction: column;
-  font-size: 1.5rem;
-  margin: 0.3rem 0;
+  font-size: 1rem;
+  margin: 0.3rem 1rem;
 
   border-bottom: 3px solid transparent;
   border-top: 3px solid transparent;
@@ -183,13 +175,12 @@ export default {
   .nav__mobile-links {
     display: flex;
     flex-direction: column;
-    text-align: center;
     background: white;
     width: 100%;
   }
+
   .nav__link--mobile {
     flex-direction: row;
-    font-size: 1rem;
     margin: 0.1rem 0;
 
     background: $light;

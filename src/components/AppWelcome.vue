@@ -1,5 +1,5 @@
 <template>
-  <section class="welcome">
+  <section class="welcome" id="welcome">
     <article>
       <heading-intro>
         <template v-slot:heading>
