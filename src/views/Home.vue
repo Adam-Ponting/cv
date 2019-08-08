@@ -36,3 +36,4 @@ export default {
     'https://firebasestorage.googleapis.com/v0/b/adp-cv.appspot.com/o/home%2Ftourmalet.jpg?alt=media&token=9edccc91-aaff-4d1a-a84e-0452954ecdb5'
 }
 </script>
+<style lang="scss" scoped></style>

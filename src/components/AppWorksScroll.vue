@@ -339,6 +339,8 @@ export default {
 .swiper__slide {
   padding: 2rem;
   margin: 2rem;
+  background: $bg-white;
+
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -394,13 +396,11 @@ export default {
 }
 .view-button {
   margin-top: auto;
-  border: 2px solid black;
-  background-color: white;
-  color: black;
-  padding: 14px 28px;
+  border: 2px solid $interact;
+  background: $bg-light;
+  padding: 0.8rem 1.5rem;
   font-size: 16px;
   cursor: pointer;
-  border-color: $interact;
   color: $interact;
   &:hover {
     background-color: $interact;

@@ -37,6 +37,7 @@ export default {
   margin: 2rem 1rem;
   padding: 1rem;
   box-shadow: 1px 1px 5px 2px rgba(38, 59, 94, 0.2);
+  background: $bg-white;
   &:hover {
     box-shadow: 1px 1px 10px 2px rgba(38, 59, 94, 0.5);
     transform: scale(1.01);

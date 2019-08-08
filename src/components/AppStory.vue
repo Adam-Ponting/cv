@@ -1,27 +1,29 @@
 <template>
-  <section class="story" id="story">
-    <img :src="this.$options.bg3" class="story__image" alt="Photo of Adam" />
+  <div class="hello">
+    <section class="story" id="story">
+      <img :src="this.$options.bg3" class="story__image" alt="Photo of Adam" />
 
-    <article class="text">
-      <heading-intro>
-        <template v-slot:heading>
-          <h1 class="slot-heading">my story</h1>
-        </template>
-        <template v-slot:intro>
-          <p class="slot-intro">
-            Hello, and welcome to my website. My name is
-            <strong>Adam</strong> and this site is a portfolio of some work I
-            have done. I have had an interest in web development since the days
-            of dial-up modems and have taught myself the skills I need to allow
-            me to start in this industry. <br />I understand the client
-            <strong>experience</strong> is central to business needs and I enjoy
-            working in a team and interacting with people of different
-            capabilities.
-          </p>
-        </template>
-      </heading-intro>
-    </article>
-  </section>
+      <article class="text">
+        <heading-intro>
+          <template v-slot:heading>
+            <h1 class="slot-heading">my story</h1>
+          </template>
+          <template v-slot:intro>
+            <p class="slot-intro">
+              Hello, and welcome to my website. My name is
+              <strong>Adam</strong> and this site is a portfolio of some work I
+              have done. I have had an interest in web development since the
+              days of dial-up modems and have taught myself the skills I need to
+              allow me to start in this industry. <br />I understand the client
+              <strong>experience</strong> is central to business needs and I
+              enjoy working in a team and interacting with people of different
+              capabilities.
+            </p>
+          </template>
+        </heading-intro>
+      </article>
+    </section>
+  </div>
 </template>
 
 <script>
@@ -38,6 +40,11 @@ export default {
 
 <style lang="scss" scoped>
 @import '@/assets/css/colors.scss'; // imports variable to this component
+.hello {
+  width: 100%;
+  background: $bg-dark;
+}
+
 .story {
   max-width: 1200px;
   margin: 0 auto;
