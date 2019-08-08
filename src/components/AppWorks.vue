@@ -15,7 +15,6 @@
         </p>
       </template>
     </heading-intro>
-
     <app-works-scroll />
   </div>
 </template>
@@ -36,6 +35,11 @@ export default {
 .works {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 5rem 1rem;
+}
+@media screen and (max-width: 800px) {
+  .works {
+    padding: 2rem 1rem;
+  }
 }
 </style>

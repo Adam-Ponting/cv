@@ -34,7 +34,7 @@ export default {
 @import '@/assets/css/colors.scss'; // imports variable to this component
 
 .skill-item {
-  margin: 1rem;
+  margin: 2rem 1rem;
   padding: 1rem;
   box-shadow: 1px 1px 5px 2px rgba(38, 59, 94, 0.2);
   &:hover {
