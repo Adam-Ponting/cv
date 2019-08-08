@@ -74,6 +74,7 @@ export default {
   .skill-item__icon {
     width: 48px;
     font-size: 48px;
+    align-self: center;
   }
   .skill-item__details {
     padding-left: 0.5rem;
