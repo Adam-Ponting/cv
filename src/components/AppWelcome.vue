@@ -123,7 +123,7 @@ export default {
   align-items: center;
   text-align: center;
   padding: 0 0.5rem;
-  background: white;
+  background: $bg-white;
   border-radius: 10px;
   margin: 1rem;
   box-shadow: 1px 1px 5px 2px rgba(38, 59, 94, 0.2);
