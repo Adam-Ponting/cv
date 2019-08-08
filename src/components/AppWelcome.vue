@@ -101,7 +101,7 @@ export default {
   background: $bg-light;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 5rem 1rem;
 }
 .welcome-section {
   display: flex;
@@ -128,6 +128,9 @@ export default {
   font-size: 1.6rem;
 }
 @media screen and (max-width: 800px) {
+  .welcome {
+    padding: 2rem 1rem;
+  }
   .welcome-details__paragraph {
     font-size: 1rem;
   }
