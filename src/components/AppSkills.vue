@@ -180,6 +180,16 @@ export default {
   background: $bg-light;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 5rem 1rem;
+}
+.test {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+@media screen and (max-width: 800px) {
+  .skills {
+    padding: 2rem 1rem;
+  }
 }
 </style>

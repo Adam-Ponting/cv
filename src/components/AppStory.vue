@@ -53,6 +53,8 @@ export default {
   width: 400px;
   height: auto;
   border-radius: 50%;
+  border: 1px solid white;
+  box-shadow: 0 0 15px 0 black;
 }
 .story__details {
   padding-left: 1rem;
@@ -60,6 +62,7 @@ export default {
 @media screen and (max-width: 800px) {
   .story {
     display: block;
+    padding: 2rem 1rem;
   }
   .story__image {
     display: block;
