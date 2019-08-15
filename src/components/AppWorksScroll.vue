@@ -158,7 +158,7 @@ export default {
           'https://firebasestorage.googleapis.com/v0/b/adp-cv.appspot.com/o/worksScroll%2Ftribute.jpg?alt=media&token=b171961b-bddd-44d7-9327-60192018ee19',
         url: 'https://adp-fcc.netlify.com/tribute',
 
-        // link: 'tribute', // chanegd to url
+        // link: 'tribute', // changed to url
         title: 'Responsive Web Design - Tribute Page',
         description:
           'A freeCodeCamp project showcasing <strong>HTML</strong> and <strong>CSS</strong> skills in respect to structure, layout and responsive design.',
@@ -181,8 +181,8 @@ export default {
       {
         image:
           'https://firebasestorage.googleapis.com/v0/b/adp-cv.appspot.com/o/worksScroll%2Fproduct.jpg?alt=media&token=7bc7dd8a-cc8f-4aa7-8736-c915adac2a2c',
-
-        link: 'product',
+        url: 'https://adp-fcc.netlify.com/product-landing',
+        // link: 'product', // changed to url
         title: 'Responsive Web Design - Product Landing Page',
         description:
           'A freeCodeCamp project showcasing <strong>CSS Grid</strong> including embedding videos and responsive design.',
