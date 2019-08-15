@@ -2,7 +2,9 @@
   <div class="swiper" id="swiper">
     <div v-for="slide in swiperSlides" :key="slide.link" class="swiper__slide">
       <img :src="slide.image" class="swiper__image" />
-      <h4 class="swiper__heading">{{ slide.title }}</h4>
+      <h4 class="swiper__heading" @click="routerPush(slide.link, slide.url)">
+        {{ slide.title }}
+      </h4>
       <p v-html="slide.description" class="swiper__description"></p>
       <h5 class="swiper__heading-skills">Skills:</h5>
       <div class="swiper__skills-icons">
@@ -369,6 +371,7 @@ export default {
   text-decoration-color: transparent;
   cursor: default;
   &:hover {
+    cursor: pointer;
     text-decoration: underline;
   }
 }
