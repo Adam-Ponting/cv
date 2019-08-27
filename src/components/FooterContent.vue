@@ -3,12 +3,16 @@
     <p class="footer__details">
       <strong>ADP CV</strong>
       by
-      <a :href="this.$options.adp">Adam Ponting.</a> View my
-      <a :href="this.$options.gitHub" target="_blank">GitHub.</a>
+      <a :href="this.$options.adp" class="footer-link">Adam Ponting.</a> View my
+      <a :href="this.$options.gitHub" target="_blank" class="footer-link"
+        >GitHub.</a
+      >
       The source code is licensed
-      <a :href="this.$options.MIT" target="_blank">MIT.</a> The website content
-      is licensed
-      <a :href="this.$options.licence" target="_blank">CC BY NC SA 4.0.</a>
+      <a :href="this.$options.MIT" target="_blank" class="footer-link">MIT.</a>
+      The website content is licensed
+      <a :href="this.$options.licence" target="_blank" class="footer-link"
+        >CC BY NC SA 4.0.</a
+      >
       <br />
       <a v-scroll-to="'#home'" class="footer-link">Return to top</a>
     </p>

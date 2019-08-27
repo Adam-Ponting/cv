@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
-import ProductLandingPage from './components/freeCodeCamp/ProductLandingPage.vue'
 import Error404 from './components/Error404.vue'
 
 Vue.use(Router)
@@ -14,11 +13,6 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home
-    },
-    {
-      path: '/product',
-      name: 'product',
-      component: ProductLandingPage
     },
     /*
     https://router.vuejs.org/guide/essentials/history-mode.html#example-server-configurations
