@@ -1,0 +1,3 @@
+# https://moz.com/learn/seo/robotstxt
+# Allowing all web crawlers access to all content
+User-agent: * Disallow: 
