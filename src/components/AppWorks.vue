@@ -10,7 +10,12 @@
           <strong>HTML</strong>, <strong>CSS</strong> and
           <strong>javaScript</strong>. Some are projects from courses I have
           studied and others are hobby projects. Almost all my work is on
-          <a href="https://github.com/Mada75" target="_blank">GitHub</a>
+          <a
+            href="https://github.com/Adam-Ponting"
+            target="_blank"
+            rel="noreferrer"
+            >GitHub</a
+          >
           to view and critique.
         </p>
       </template>

@@ -67,14 +67,15 @@
           View my GitHub:
           <br />
           <a
-            href="https://github.com/Mada75"
+            href="https://github.com/Adam-Ponting"
             target="_blank"
+            rel="noreferrer"
             class="contact-me"
           >
             <font-awesome-icon
               :icon="['fab', 'github']"
               class="contact-me__font-awesome"
-            />https://github.com/Mada75
+            />https://github.com/Adam-Ponting
           </a>
         </p>
       </article>
