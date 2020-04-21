@@ -4,13 +4,27 @@
       <strong>ADP CV</strong>
       by
       <a :href="this.$options.adp" class="footer-link">Adam Ponting.</a> View my
-      <a :href="this.$options.gitHub" target="_blank" class="footer-link"
+      <a
+        :href="this.$options.gitHub"
+        target="_blank"
+        rel="noreferrer"
+        class="footer-link"
         >GitHub.</a
       >
       The source code is licensed
-      <a :href="this.$options.MIT" target="_blank" class="footer-link">MIT.</a>
+      <a
+        :href="this.$options.MIT"
+        target="_blank"
+        rel="noreferrer"
+        class="footer-link"
+        >MIT.</a
+      >
       The website content is licensed
-      <a :href="this.$options.licence" target="_blank" class="footer-link"
+      <a
+        :href="this.$options.licence"
+        target="_blank"
+        rel="noreferrer"
+        class="footer-link"
         >CC BY NC SA 4.0.</a
       >
       <br />
@@ -23,7 +37,7 @@
 export default {
   adp: 'mailto:adamponting@outlook.com',
   MIT: 'http://opensource.org/licenses/mit-license.php',
-  gitHub: 'https://github.com/Mada75',
+  gitHub: 'https://github.com/Adam-Ponting',
   licence: 'http://creativecommons.org/licenses/by-nc-sa/4.0/'
 }
 </script>
