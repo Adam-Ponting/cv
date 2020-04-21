@@ -1,7 +1,7 @@
 <template>
   <div class="swiper" id="swiper">
     <div v-for="slide in swiperSlides" :key="slide.link" class="swiper__slide">
-      <img :src="slide.image" class="swiper__image" />
+      <img :src="slide.image" class="swiper__image" :alt="slide.title" />
       <h4 class="swiper__heading" @click="routerPush(slide.link, slide.url)">
         {{ slide.title }}
       </h4>
