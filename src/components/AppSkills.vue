@@ -45,7 +45,7 @@ export default {
       color: '#F16529',
       header: 'HyperText Markup Language (HTML)',
       text:
-        'This is where it all begins! The building block for all my development starts with <strong>good</strong> and <strong>simple</strong> HMTL structure.'
+        'This is where it all begins! The building block for all my development starts with <strong>good</strong> and <strong>simple</strong> HMTL5 structure.'
     },
     {
       name: 'CSS3',
@@ -53,7 +53,7 @@ export default {
       color: '#DD3A0A',
       header: 'Cascading Style Sheets (CSS)',
       text:
-        "I have enjoyed learning CSS to <strong>style</strong> and <strong>shape</strong> my sites. CSS opens up many options to engage the user and is an area I'm actively experimenting in."
+        "I have enjoyed learning CSS to <strong>style</strong> and <strong>shape</strong> my sites. CSS opens up many options to engage the user and is an area I'm always interested in."
     },
     {
       name: 'javaScrpt',
@@ -61,7 +61,7 @@ export default {
       color: '#F0DB4F',
       header: 'JavaScript',
       text:
-        'JavaScript is where I focus my continued learning with increased <strong>efficiency</strong>. I use <strong>ES6</strong> code where possible and am always practicing and learning new code.'
+        'JavaScript is where I focus my continued learning with increased <strong>understanding</strong>. I use <strong>ES6</strong> code where appropriate and am always practicing and learning new code. I use <strong>jQuery</strong> professionally and enjoy its cross browser compatibility.'
     },
     {
       name: 'Vue.js',
@@ -69,7 +69,7 @@ export default {
       color: '#41B883',
       header: 'Vue',
       text:
-        'I have been using and learning Vue alongside javaScript and love its simple syntax, great support and ease of use. All my projects are built in Vue and I use <strong>Vuex</strong> and <strong>Vue-router</strong> where needed. I am comfortable with the Vue framework and look forward to the new features expected in <strong>Vue 3.0</strong>.'
+        'I have been using and learning Vue alongside javaScript. The majority of my websites are built in Vue and I use <strong>Vuex</strong> and <strong>Vue-router</strong> where needed. I am comfortable with the Vue framework and look forward to the new features expected in <strong>Vue 3.0</strong> later in 2020.'
     },
     {
       name: 'Responsive Design',
@@ -77,7 +77,7 @@ export default {
       color: '#472ada',
       header: 'Responsive Design',
       text:
-        'With the changing ways we view and interact with screens I design each website to the latest standards to be responsive and ensure the user gets the best experience. I have used a combination of <strong>Flexbox</strong>, <strong>CSS Grid</strong> and CSS frameworks such as <strong>Bootstrap</strong> to design my portfolio.'
+        'With the changing ways we view and interact with screens I design each website to the latest standards to be responsive and ensure the user gets the best experience. I have used a combination of <strong>Flexbox</strong>, <strong>CSS Grid</strong> to design my portfolio and I use <strong>Bootstrap</strong> in my current job.'
     },
     {
       name: 'SCSS',
@@ -96,6 +96,14 @@ export default {
         'I use GitHub to plan, build and store my code. I have experience of <strong>version control</strong> and <strong>forking</strong>, with an understanding of the process of tracking and controlling changes to source code.'
     },
     {
+      name: 'TortoiseSVN',
+      icon: ['fas', 'code-branch'],
+      color: '#417fda',
+      header: 'SVN',
+      text:
+        'I use Tortoise SVN professionally and it was interesting learning a different and new way of handling version control.'
+    },
+    {
       name: 'Google Firebase',
       icon: ['fab', 'google'],
       color: '#ff8f00',
@@ -109,7 +117,7 @@ export default {
       color: '#4C8BF5',
       header: 'Browser Developer Tools',
       text:
-        'I use Chrome Developer Tools to test and fine tune my pages in the browser itself, allowing me to see the changes live. I use the console to view and track any errors that <em>may</em> occur.'
+        'I use Chrome Developer Tools to test and fine tune in the browser, allowing me to see the changes live. I use the console to view and track any errors that <em>may</em> occur. I design for the different web browsers and standards'
     },
     {
       name: 'Node Package Manager',
@@ -117,7 +125,7 @@ export default {
       color: '#cb3837',
       header: 'Node Package Manager',
       text:
-        'I use npm to maintain, share and publish my dependencies and projects and have experience using <strong>axios</strong> and <strong>Highcharts</strong> along with many other plugins.'
+        'I use npm to maintain, update, share and publish my dependencies and projects and have experience using <strong>axios</strong> and <strong>Highcharts</strong> along with many other plugins.'
     },
     {
       name: 'Bootstrap',
@@ -125,31 +133,31 @@ export default {
       color: '#080135',
       header: 'Bootstrap',
       text:
-        'I have used Bootstrap to quickly design and build websites. I like its vast library and speed I can <strong>prototype</strong> a website.'
+        'I use Bootstrap professionally, updating old code to run in newer browsers and devices. I like its vast library and speed I can <strong>prototype</strong> a website.'
     },
-    {
-      name: 'Moment.js',
-      icon: ['fas', 'clock'],
-      color: '#61b2a7',
-      header: 'Moment.js',
-      text:
-        'I have used Moment.js to parse, validate, manipulate, and display dates and times in JavaScript.'
-    },
+    // {
+    //   name: 'Moment.js',
+    //   icon: ['fas', 'clock'],
+    //   color: '#61b2a7',
+    //   header: 'Moment.js',
+    //   text:
+    //     'I have used Moment.js to parse, validate, manipulate, and display dates and times in JavaScript.'
+    // },
     {
       name: 'Command Line Interface',
       icon: ['fas', 'terminal'],
       color: '#472ada',
       header: 'Command Line Interface',
       text: 'I am happy to use the CLI where it is needed to solve a problem.'
-    },
-    {
-      name: 'freeCodeCamp',
-      icon: ['fab', 'free-code-camp'],
-      color: '#006400',
-      header: 'freeCodeCamp',
-      text:
-        'This has been one of my learning resources and I have completed several of their courses and projects and frequently use it to refresh my memory.'
     }
+    // {
+    //   name: 'freeCodeCamp',
+    //   icon: ['fab', 'free-code-camp'],
+    //   color: '#006400',
+    //   header: 'freeCodeCamp',
+    //   text:
+    //     'This has been one of my learning resources and I have completed several of their courses and projects and frequently use it to refresh my memory.'
+    // }
     // https://skillcrush.com/2017/03/20/front-end-developer-skills/
     // https://skillcrush.com/2016/10/31/web-developer-portfolio/
     // https://skillcrush.com/2019/03/19/how-to-start-a-web-developer-career/

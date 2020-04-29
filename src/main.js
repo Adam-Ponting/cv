@@ -24,7 +24,8 @@ import {
   faChevronLeft,
   faBars,
   faTimes,
-  faClock
+  faClock,
+  faCodeBranch
 } from '@fortawesome/free-solid-svg-icons'
 import {
   faJs,
@@ -72,7 +73,8 @@ library.add(
   faChevronLeft,
   faBars,
   faTimes,
-  faClock
+  faClock,
+  faCodeBranch
 )
 // use font-awesome-icon for icons
 Vue.component('font-awesome-icon', FontAwesomeIcon)
