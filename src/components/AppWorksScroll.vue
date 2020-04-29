@@ -1,7 +1,12 @@
 <template>
   <div class="swiper" id="swiper">
     <div v-for="slide in swiperSlides" :key="slide.link" class="swiper__slide">
-      <img :src="slide.image" class="swiper__image" :alt="slide.title" />
+      <img
+        :src="slide.image"
+        class="swiper__image"
+        :alt="slide.title"
+        @click="routerPush(slide.link, slide.url)"
+      />
       <h4 class="swiper__heading" @click="routerPush(slide.link, slide.url)">
         {{ slide.title }}
       </h4>
@@ -361,6 +366,9 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 0 0 5px black;
+  &:hover {
+    cursor: pointer;
+  }
 }
 .swiper__heading {
   padding-top: 1.5rem;
