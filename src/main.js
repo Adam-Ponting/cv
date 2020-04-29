@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-import store from './store'
 // import font awesome bits
 import { library } from '@fortawesome/fontawesome-svg-core'
 import {
@@ -41,10 +40,6 @@ import {
   faGoogle,
   faLinkedin
 } from '@fortawesome/free-brands-svg-icons'
-// import swiper
-// import VueAwesomeSwiper from 'vue-awesome-swiper' not used
-
-// import VeeValidate from 'vee-validate' not used
 
 // import scss
 import '@/assets/css/app.scss'
@@ -84,9 +79,6 @@ Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.component('font-awesome-layers', FontAwesomeLayers)
 Vue.component('font-awesome-layers-text', FontAwesomeLayersText)
 
-//Vue.use(VueAwesomeSwiper /* { default global options } */) not used
-//Vue.use(VeeValidate) not used
-
 const VueScrollTo = require('vue-scrollto') // https://vue-scrollto.netlify.com/
 Vue.use(VueScrollTo, {
   container: 'body',
@@ -106,6 +98,5 @@ Vue.config.productionTip = false
 
 new Vue({
   router,
-  store,
   render: h => h(App)
 }).$mount('#app')

@@ -122,8 +122,6 @@
 </template>
 
 <script>
-import 'swiper/dist/css/swiper.css'
-
 export default {
   data() {
     return {}
