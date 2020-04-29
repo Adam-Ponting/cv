@@ -23,12 +23,14 @@
         <h3 class="welcome-details__header">Who am I?</h3>
 
         <p class="welcome-details__paragraph">
-          I have almost 20 years experience in the sports industry. The majority
-          of which was as a tennis coach and recently as a cycle guide and
-          mechanic.
-          <br />I have also worked in Europe for several years and since
-          returning to England I have been a Workshop Manager at Evans Cycles
-          and began studying to become a front end developer.
+          I have almost 20 years experience in the sports industry as a tennis
+          coach and recently as a cycle guide and mechanic.
+          <br />
+          I have also worked in Europe for several years and have been a
+          Workshop Manager at Evans Cycles where alongside work I studied a
+          broad range of Front End Web Development skills. I am currently
+          working as a <strong>UI Development Consultant</strong> for a
+          reservation and distribution company.
         </p>
       </article>
       <article class="welcome-article">
@@ -38,13 +40,16 @@
         />
         <h3 class="welcome-details__header">What I do</h3>
         <p class="welcome-details__paragraph">
-          I have covered and am always learning:
+          I have an understanding of; and I am always learning:
           <strong>HTML5</strong>, <strong>CSS3</strong> and
-          <strong>javaScript</strong>. I build most of my projects using the
-          <strong>Vue.js</strong> framework so these are the skills I am most
-          confident in. <br />I am always practicing and refining my skills and
-          am excited to develop my knowledge with each project I do and I look
-          forward to growing my skills in web development.
+          <strong>javaScript</strong>. In a professional capacity I use
+          <strong>Bootstrap</strong> and <strong>jQuery</strong> whilst I build
+          most of my personal projects using the <strong>Vue.js</strong>
+          framework.
+          <br />
+          I am always practicing and refining my skills and am excited to
+          develop my knowledge with each project I do and I look forward to
+          growing my skills in web development.
         </p>
       </article>
       <article class="welcome-article">
@@ -64,7 +69,18 @@
           </a>
         </p>
         <p class="welcome-details__paragraph">
-          View my GitHub:
+          View my profile on: <br />
+          <a
+            href="https://www.linkedin.com/in/adam-ponting/"
+            target="_blank"
+            rel="noreferrer"
+            class="contact-me"
+          >
+            <font-awesome-icon
+              :icon="['fab', 'linkedin']"
+              class="contact-me__font-awesome"
+            />LinkedIn</a
+          >
           <br />
           <a
             href="https://github.com/Adam-Ponting"
@@ -75,7 +91,19 @@
             <font-awesome-icon
               :icon="['fab', 'github']"
               class="contact-me__font-awesome"
-            />https://github.com/Adam-Ponting
+            />GitHub
+          </a>
+          <br />
+          <a
+            href="https://www.freecodecamp.org/aponting"
+            target="_blank"
+            rel="noreferrer"
+            class="contact-me"
+          >
+            <font-awesome-icon
+              :icon="['fab', 'free-code-camp']"
+              class="contact-me__font-awesome"
+            />FreeCodeCamp
           </a>
         </p>
       </article>
