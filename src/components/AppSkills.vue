@@ -61,7 +61,7 @@ export default {
       color: '#F0DB4F',
       header: 'JavaScript',
       text:
-        'JavaScript is where I focus my continued learning with increased <strong>understanding</strong>. I use <strong>ES6</strong> code where appropriate and am always practicing and learning new code.'
+        'JavaScript is where I focus my continued learning with increased <strong>understanding</strong>. I use <strong>ES6</strong> code where appropriate and am always practicing and learning new code. I use <strong>jQuery</strong> professionally and enjoy its cross browser compatibility.'
     },
     {
       name: 'Vue.js',
@@ -117,7 +117,7 @@ export default {
       color: '#4C8BF5',
       header: 'Browser Developer Tools',
       text:
-        'I use Chrome Developer Tools to test and fine tune my pages in the browser itself, allowing me to see the changes live. I use the console to view and track any errors that <em>may</em> occur.'
+        'I use Chrome Developer Tools to test and fine tune in the browser, allowing me to see the changes live. I use the console to view and track any errors that <em>may</em> occur. I design for the different web browsers and standards'
     },
     {
       name: 'Node Package Manager',
@@ -125,7 +125,7 @@ export default {
       color: '#cb3837',
       header: 'Node Package Manager',
       text:
-        'I use npm to maintain, share and publish my dependencies and projects and have experience using <strong>axios</strong> and <strong>Highcharts</strong> along with many other plugins.'
+        'I use npm to maintain, update, share and publish my dependencies and projects and have experience using <strong>axios</strong> and <strong>Highcharts</strong> along with many other plugins.'
     },
     {
       name: 'Bootstrap',
@@ -133,31 +133,31 @@ export default {
       color: '#080135',
       header: 'Bootstrap',
       text:
-        'I have used Bootstrap to quickly design and build websites. I like its vast library and speed I can <strong>prototype</strong> a website.'
+        'I use Bootstrap professionally, updating old code to run in newer browsers and devices. I like its vast library and speed I can <strong>prototype</strong> a website.'
     },
-    {
-      name: 'Moment.js',
-      icon: ['fas', 'clock'],
-      color: '#61b2a7',
-      header: 'Moment.js',
-      text:
-        'I have used Moment.js to parse, validate, manipulate, and display dates and times in JavaScript.'
-    },
+    // {
+    //   name: 'Moment.js',
+    //   icon: ['fas', 'clock'],
+    //   color: '#61b2a7',
+    //   header: 'Moment.js',
+    //   text:
+    //     'I have used Moment.js to parse, validate, manipulate, and display dates and times in JavaScript.'
+    // },
     {
       name: 'Command Line Interface',
       icon: ['fas', 'terminal'],
       color: '#472ada',
       header: 'Command Line Interface',
       text: 'I am happy to use the CLI where it is needed to solve a problem.'
-    },
-    {
-      name: 'freeCodeCamp',
-      icon: ['fab', 'free-code-camp'],
-      color: '#006400',
-      header: 'freeCodeCamp',
-      text:
-        'This has been one of my learning resources and I have completed several of their courses and projects and frequently use it to refresh my memory.'
     }
+    // {
+    //   name: 'freeCodeCamp',
+    //   icon: ['fab', 'free-code-camp'],
+    //   color: '#006400',
+    //   header: 'freeCodeCamp',
+    //   text:
+    //     'This has been one of my learning resources and I have completed several of their courses and projects and frequently use it to refresh my memory.'
+    // }
     // https://skillcrush.com/2017/03/20/front-end-developer-skills/
     // https://skillcrush.com/2016/10/31/web-developer-portfolio/
     // https://skillcrush.com/2019/03/19/how-to-start-a-web-developer-career/
