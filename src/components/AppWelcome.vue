@@ -23,14 +23,13 @@
         <h3 class="welcome-details__header">Who am I?</h3>
 
         <p class="welcome-details__paragraph">
-          I have almost 20 years experience in the sports industry as a tennis
-          coach and recently as a cycle guide and mechanic.
+          I have 20 years experience in the sports industry as a tennis
+          coach, cycle guide and Workshop Manager.
           <br />
-          I have also worked in Europe for several years and have been a
-          Workshop Manager at Evans Cycles where alongside work I studied a
+          I have also worked in Europe for several years and I self-studied a
           broad range of Front End Web Development skills. I am currently
           working as a <strong>UI Development Consultant</strong> for a
-          reservation and distribution company.
+          holiday reservation and distribution company.
         </p>
       </article>
       <article class="welcome-article">

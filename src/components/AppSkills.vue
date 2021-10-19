@@ -69,7 +69,7 @@ export default {
       color: '#41B883',
       header: 'Vue',
       text:
-        'I have been using and learning Vue alongside javaScript. The majority of my websites are built in Vue and I use <strong>Vuex</strong> and <strong>Vue-router</strong> where needed. I am comfortable with the Vue framework and look forward to the new features expected in <strong>Vue 3.0</strong> later in 2020.'
+        'I have been using and learning Vue alongside javaScript. I use Vue 2 in a professional capacity and am looking forward to the new features in <strong>Vue 3.0</strong> The majority of my websites are built in Vue and I use <strong>Vuex</strong> and <strong>Vue-router</strong> where needed.'
     },
     {
       name: 'Responsive Design',
@@ -101,7 +101,7 @@ export default {
       color: '#417fda',
       header: 'SVN',
       text:
-        'I use Tortoise SVN professionally and it was interesting learning a different and new way of handling version control.'
+        'I use Tortoise SVN professionally, it was interesting learning a different and new way of handling version control.'
     },
     {
       name: 'Google Firebase',
@@ -162,7 +162,7 @@ export default {
     // https://skillcrush.com/2016/10/31/web-developer-portfolio/
     // https://skillcrush.com/2019/03/19/how-to-start-a-web-developer-career/
     /*     
-    {
+	{
       name: 'Testing',
       icon: ['fas', 'bug'],
       color: '#472ada',
